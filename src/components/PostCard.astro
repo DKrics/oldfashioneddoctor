@@ -1,0 +1,29 @@
+---
+import type { Post } from '../lib/posts';
+import { formatDate, withBase } from '../lib/site';
+
+interface Props {
+  post: Post;
+  feature?: boolean;
+  row?: boolean;
+}
+const { post, feature = false, row = false } = Astro.props;
+const href = withBase(`posts/${post.data.slug}/`);
+const hero = post.data.hero ? withBase(post.data.hero) : '';
+---
+<a class:list={['card', feature && 'feature', row && 'row']} href={href}>
+  <div
+    class:list={['card-media', !hero && 'placeholder']}
+    style={hero ? `background-image:url('${hero}')` : undefined}
+  ></div>
+  <div class="card-body">
+    <div class="cats">
+      {post.data.categories.map((c) => (
+        <span class="pill">{c}</span>
+      ))}
+    </div>
+    <h3>{post.data.title}</h3>
+    <p class="excerpt">{post.data.description}</p>
+    <p class="byline">{formatDate(post.data.published)}</p>
+  </div>
+</a>

@@ -1,0 +1,31 @@
+---
+import { SITE, CATEGORIES, CATEGORY_META, withBase } from '../lib/site';
+---
+<footer class="site-footer" data-pagefind-ignore>
+  <div class="footer-inner">
+    <div>
+      <h2>{SITE.title}</h2>
+      <p>{SITE.tagline}</p>
+      <p>{SITE.description}</p>
+    </div>
+    <div>
+      <p><strong>Browse</strong></p>
+      <ul>
+        {CATEGORIES.map((c) => (
+          <li><a href={withBase(`${CATEGORY_META[c].slug}/`)}>{c}</a></li>
+        ))}
+        <li><a href={withBase('archive/')}>Archive</a></li>
+        <li><a href={withBase('search/')}>Search</a></li>
+      </ul>
+    </div>
+    <div>
+      <p><strong>Elsewhere</strong></p>
+      <ul>
+        <li><a href={SITE.twitter}>{SITE.twitterHandle}</a></li>
+        <li><a href={withBase('about/')}>About</a></li>
+        <li><a href={withBase('rss.xml')}>RSS</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="fineprint">{SITE.copyright}</p>
+</footer>

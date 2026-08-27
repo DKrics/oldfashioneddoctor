@@ -1,0 +1,72 @@
+---
+import { SITE, CATEGORIES, CATEGORY_META, withBase } from '../lib/site';
+
+const path = Astro.url.pathname;
+const searchHref = withBase('search/');
+const indexHref = withBase('search-index.json');
+
+const links = [
+  ...CATEGORIES.map((c) => ({ href: withBase(`${CATEGORY_META[c].slug}/`), label: c })),
+  { href: withBase('archive/'), label: 'Archive' },
+  { href: withBase('about/'), label: 'About' },
+];
+
+function isCurrent(href: string) {
+  return path === href || path.startsWith(href);
+}
+---
+<header class="site-header" data-pagefind-ignore>
+  <div class="header-inner">
+    <a class="brand" href={withBase()}>
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <rect width="48" height="48" rx="4" fill="#1b140f"></rect>
+        <circle cx="24" cy="22" r="10" fill="none" stroke="#b45309" stroke-width="2"></circle>
+        <path d="M24 14v16M16 22h16" stroke="#f4efe4" stroke-width="1.6"></path>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-title">{SITE.title}</span>
+        <span class="brand-tag">{SITE.tagline}</span>
+      </span>
+    </a>
+    <nav class="nav-desktop" aria-label="Primary">
+      {links.map((l) => (
+        <a href={l.href} aria-current={isCurrent(l.href) ? 'page' : undefined}>{l.label}</a>
+      ))}
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn" type="button" id="search-toggle" aria-expanded="false" aria-controls="search-panel" title="Search">
+        <span aria-hidden="true">Q</span>
+        <span class="sr-only">Search</span>
+      </button>
+      <button class="icon-btn menu-btn" type="button" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" title="Menu">
+        <span aria-hidden="true">=</span>
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </div>
+  <div class="search-panel" id="search-panel">
+    <div class="search-panel-inner">
+      <form class="search-form" action={searchHref} method="get" role="search">
+        <input id="header-q" type="search" name="q" placeholder="Search posts, recipes, clinic notes..." autocomplete="off" data-index={indexHref} />
+        <button type="submit">Search</button>
+      </form>
+      <ul class="search-live" id="header-live" hidden></ul>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile">
+    {links.map((l) => (
+      <a href={l.href} aria-current={isCurrent(l.href) ? 'page' : undefined}>{l.label}</a>
+    ))}
+    <a href={searchHref}>Search</a>
+  </nav>
+</header>
+<style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+  }
+</style>
+<script src="../scripts/header-search.ts"></script>

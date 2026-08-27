@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/site';
+
+const q = Astro.url.searchParams.get('q') ?? '';
+const pagefindCss = withBase('pagefind/pagefind-ui.css');
+const pagefindJs = withBase('pagefind/pagefind-ui.js');
+const bundlePath = withBase('pagefind/');
+const indexHref = withBase('search-index.json');
+---
+<BaseLayout title="Search" description="Search Old Fashioned Doctor.">
+  <div class="search-page">
+    <p class="kicker" style="color: var(--amber)">Look it up</p>
+    <h1>Search</h1>
+    <p class="page-intro">Recipes, clinic notes, barrel experiments, and the rest of the journal.</p>
+    <link rel="stylesheet" href={pagefindCss} />
+    <div id="search" data-pagefind-js={pagefindJs} data-bundle={bundlePath} data-q={q} data-index={indexHref}></div>
+    <div id="fuse-box" hidden>
+      <form class="search-form" method="get">
+        <input id="fuse-q" type="search" name="q" value={q} placeholder="Search posts..." />
+        <button type="submit">Search</button>
+      </form>
+      <ul class="fuse-results" id="fuse-results"></ul>
+    </div>
+  </div>
+</BaseLayout>
+<script src="../scripts/search-page.ts"></script>

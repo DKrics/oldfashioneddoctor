@@ -1,0 +1,7 @@
+# When you are ready to point oldfashioneddoctor.com at GitHub Pages:
+# 1. Keep Blogger live until DNS is confirmed.
+# 2. Copy this file to public/CNAME (contents: oldfashioneddoctor.com).
+# 3. In astro.config.mjs set site: https://oldfashioneddoctor.com and base: /
+# 4. In GitHub repo Settings, Pages, add custom domain only after Squarespace records are in place.
+# Do not enable the custom domain before that cutover.
+oldfashioneddoctor.com

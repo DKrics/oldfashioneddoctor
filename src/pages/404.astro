@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/site';
+---
+<BaseLayout title="Not found" description="This page is not on the journal.">
+  <div class="wrap" style="max-width: 36rem">
+    <p class="kicker" style="color: var(--amber)">404</p>
+    <h1 style="font-family: var(--serif-display); font-size: clamp(2rem,5vw,3rem);">Lost the chart</h1>
+    <p class="page-intro">That address is not in this archive. Try search, or start from the masthead.</p>
+    <p>
+      <a class="btn btn-ink" href={withBase()}>Home</a>
+      <a class="btn" href={withBase('search/')} style="margin-left: 0.5rem">Search</a>
+    </p>
+  </div>
+</BaseLayout>

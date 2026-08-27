@@ -1,0 +1,22 @@
+{
+  "name": "oldfashioneddoctor",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Old Fashioned Doctor — Medicine. Cocktails. Life.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^5.18.2",
+    "fuse.js": "^7.5.0",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "pagefind": "^1.4.0"
+  }
+}

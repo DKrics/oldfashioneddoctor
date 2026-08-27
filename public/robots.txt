@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dkrics.github.io/oldfashioneddoctor/sitemap-index.xml

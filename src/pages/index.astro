@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FilterChips from '../components/FilterChips.astro';
+import PostCard from '../components/PostCard.astro';
+import { SITE, withBase, CATEGORY_META } from '../lib/site';
+import { allPosts, postsInCategory } from '../lib/posts';
+
+const posts = await allPosts();
+const featured = posts[0];
+const nextTwo = posts.slice(1, 3);
+const cocktails = (await postsInCategory('Cocktails')).slice(0, 3);
+const medicine = (await postsInCategory('Medicine')).slice(0, 3);
+const life = (await postsInCategory('Life')).slice(0, 3);
+const hero = withBase('images/hero.jpg');
+---
+<BaseLayout>
+  <section class="masthead" style={`--hero: url('${hero}')`}>
+    <div class="masthead-bg"></div>
+    <div class="masthead-inner">
+      <p class="kicker">A journal of</p>
+      <h1>{SITE.tagline}</h1>
+      <p class="lede">
+        Family practice by day, bourbon and barrel-aging by night — essays from the clinic, the bar, and the driveway in between.
+      </p>
+      <div class="masthead-cta">
+        <a class="btn btn-solid" href={withBase(`posts/${featured.data.slug}/`)}>Read the latest</a>
+        <a class="btn btn-ghost" href={withBase('archive/')}>Full archive</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <FilterChips active="all" />
+
+    <div class="section-head">
+      <h2>The latest</h2>
+      <p>{posts.length} essays, recipes, and clinic notes</p>
+    </div>
+    <div class="feature-grid">
+      <PostCard post={featured} feature />
+      <div class="stack">
+        {nextTwo.map((p) => <PostCard post={p} row />)}
+      </div>
+    </div>
+
+    <div class="section-head">
+      <h2>{CATEGORY_META.Cocktails.kicker}</h2>
+      <p><a href={withBase('cocktails/')}>All cocktails</a></p>
+    </div>
+    <div class="triptych">
+      {cocktails.map((p) => <PostCard post={p} />)}
+    </div>
+
+    <div class="section-head">
+      <h2>{CATEGORY_META.Medicine.kicker}</h2>
+      <p><a href={withBase('medicine/')}>All medicine</a></p>
+    </div>
+    <div class="triptych">
+      {medicine.map((p) => <PostCard post={p} />)}
+    </div>
+
+    <div class="section-head">
+      <h2>{CATEGORY_META.Life.kicker}</h2>
+      <p><a href={withBase('life/')}>All life</a></p>
+    </div>
+    <div class="triptych">
+      {life.map((p) => <PostCard post={p} />)}
+    </div>
+  </div>
+</BaseLayout>

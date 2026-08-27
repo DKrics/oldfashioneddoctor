@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase, tagSlug } from '../../lib/site';
+import { allPosts, allTags } from '../../lib/posts';
+
+const posts = await allPosts();
+const tags = allTags(posts);
+---
+<BaseLayout title="Labels" description="Every label from the Old Fashioned Doctor journal.">
+  <div class="wrap">
+    <p class="kicker" style="color: var(--amber)">Index</p>
+    <h1 style="font-family: var(--serif-display); font-size: clamp(2rem,5vw,3.2rem); letter-spacing:-0.03em; margin: 0 0 1rem;">Labels</h1>
+    <p class="post-tags">
+      {tags.map((t) => (
+        <a class="tag" href={withBase(`tags/${tagSlug(t.tag)}/`)}>
+          {t.tag} ({t.count})
+        </a>
+      ))}
+    </p>
+  </div>
+</BaseLayout>

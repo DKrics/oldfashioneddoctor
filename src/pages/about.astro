@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE, withBase } from '../lib/site';
+---
+<BaseLayout title="About" description="The only blog dedicated to medicine and cocktails, written by a practicing family physician.">
+  <div class="wrap" style="max-width: 44rem">
+    <p class="kicker" style="color: var(--amber)">The masthead</p>
+    <h1 style="font-family: var(--serif-display); font-size: clamp(2rem,5vw,3.2rem); letter-spacing:-0.03em; margin: 0 0 0.8rem;">About</h1>
+    <div class="prose" style="margin: 0; padding: 0; max-width: none">
+      <p>
+        This is the only blog dedicated to medicine and cocktails. That is not a branding exercise.
+        It is simply what the work and the evenings look like.
+      </p>
+      <p>
+        I am a practicing family physician. In clinic I write notes, argue with electronic records,
+        sit with patients, and try to practice good medicine in a system that often makes that harder
+        than it should be. After hours — and sometimes because of those hours — I think about bourbon,
+        rye, barrel-aging, ice, and the small ceremonies that make a drink worth having.
+      </p>
+      <p>
+        The pieces here are candid. Clinic life, insurance enrollment, waiting rooms, bad sazeracs,
+        a first trip down the Kentucky Bourbon Trail, a car that almost ran me over in my own garage.
+        I write as <strong>{SITE.author}</strong>. No hospital press office, no invented credentials.
+        If a story involves a patient, the details are handled the way they should be: enough to tell
+        the truth, not enough to point at a person.
+      </p>
+      <p>
+        I started this journal in 2017 because the two subjects kept colliding — a bottle of Jameson
+        off a cabinet, a Medicare question in November, a barrel of Creole cocktail going slightly
+        wrong. They still do.
+      </p>
+      <p>
+        Follow along on Twitter at
+        <a href={SITE.twitter} rel="me noopener">{SITE.twitterHandle}</a>,
+        or subscribe via <a href={withBase('rss.xml')}>RSS</a>.
+        There is no contact form. Linking is welcome; republishing is not.
+      </p>
+      <p><em>{SITE.copyright}</em></p>
+    </div>
+  </div>
+</BaseLayout>

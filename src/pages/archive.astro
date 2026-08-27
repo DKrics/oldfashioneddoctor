@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FilterChips from '../components/FilterChips.astro';
+import { formatDate, withBase } from '../lib/site';
+import { allPosts } from '../lib/posts';
+
+const posts = await allPosts();
+---
+<BaseLayout title="Archive" description="Every essay from Old Fashioned Doctor, newest first.">
+  <div class="wrap">
+    <p class="kicker" style="color: var(--amber)">The record</p>
+    <h1 style="font-family: var(--serif-display); font-size: clamp(2rem,5vw,3.2rem); letter-spacing:-0.03em; margin: 0 0 0.6rem;">Archive</h1>
+    <p class="page-intro">{posts.length} posts, 2017–2018. Filter by the three desks of the journal.</p>
+    <FilterChips active="all" />
+    <div class="archive-list">
+      {posts.map((post) => (
+        <a class="archive-item" href={withBase(`posts/${post.data.slug}/`)}>
+          {post.data.hero ? (
+            <img class="archive-thumb" src={withBase(post.data.hero)} alt="" />
+          ) : (
+            <div class="archive-thumb" style="background: linear-gradient(135deg,#3d2a1c,#b45309)"></div>
+          )}
+          <div>
+            <h3>{post.data.title}</h3>
+            <p class="byline">{post.data.categories.join(' · ')}</p>
+          </div>
+          <span class="byline hide-sm">{formatDate(post.data.published)}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,70 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { allPosts, readingMinutes, relatedPosts } from '../../lib/posts';
+import { formatDate, withBase, categoryHref, tagSlug } from '../../lib/site';
+import type { Post } from '../../lib/posts';
+
+export async function getStaticPaths() {
+  const posts = await allPosts();
+  return posts.map((post) => ({
+    params: { slug: post.data.slug },
+    props: { post, posts },
+  }));
+}
+
+interface Props {
+  post: Post;
+  posts: Post[];
+}
+const { post, posts } = Astro.props;
+const { Content } = await render(post);
+const hero = post.data.hero ? withBase(post.data.hero) : undefined;
+const mins = readingMinutes(post.body || '');
+const related = relatedPosts(post, posts, 3);
+---
+<BaseLayout title={post.data.title} description={post.data.description} image={hero}>
+  <article data-pagefind-body>
+    <header class="post-hero">
+      <div class="cats">
+        {post.data.categories.map((c) => (
+          <a class="pill" href={categoryHref(c)} data-pagefind-filter="category">{c}</a>
+        ))}
+      </div>
+      <h1 data-pagefind-meta="title">{post.data.title}</h1>
+      <p class="byline">
+        {formatDate(post.data.published)} · {post.data.author} · {mins} min read
+      </p>
+    </header>
+    {hero && (
+      <div class="post-cover">
+        <img src={hero} alt="" data-pagefind-meta="image" />
+      </div>
+    )}
+    <div class="prose">
+      <Content />
+    </div>
+    {post.data.tags.length > 0 && (
+      <p class="post-tags" data-pagefind-ignore>
+        {post.data.tags.map((t) => (
+          <a class="tag" href={withBase(`tags/${tagSlug(t)}/`)}>{t}</a>
+        ))}
+      </p>
+    )}
+    {related.length > 0 && (
+      <aside class="related wrap" data-pagefind-ignore>
+        <h2>Related essays</h2>
+        <div class="triptych">
+          {related.map((r) => (
+            <a class="card" href={withBase(`posts/${r.data.slug}/`)}>
+              <div class="card-body">
+                <h3>{r.data.title}</h3>
+                <p class="byline">{formatDate(r.data.published)}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </aside>
+    )}
+  </article>
+</BaseLayout>

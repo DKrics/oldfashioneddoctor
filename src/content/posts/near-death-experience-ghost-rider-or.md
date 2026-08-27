@@ -1,0 +1,33 @@
+---
+title: "Near Death Experience:  Ghost Rider or Knight Rider?"
+slug: near-death-experience-ghost-rider-or
+published: "2018-02-20T23:47:00.001-06:00"
+updated: "2018-02-20T23:47:16.213-06:00"
+tags:
+  - "accident"
+  - "Blanton's"
+  - "car"
+  - "luck"
+  - "soup"
+  - "Stagg Jr."
+categories:
+  - Life
+original_url: "https://www.oldfashioneddoctor.com/2018/02/near-death-experience-ghost-rider-or.html"
+author: Old Fashioned Doctor
+description: "Three weeks ago my son had a bad upper respiratory infection. Thankfully, it wasn't the flu. But he spent the day home from school. On the way home from work that evening, I…"
+---
+Three weeks ago my son had a bad upper respiratory infection.  Thankfully, it wasn't the flu.   But  he spent the day home from school.  On the way home from work that evening, I decided to pick up some chicken soup from a restaurant for him to have for dinner to help him feel better.  The soup was in a plastic quart container, and I didn't want it to spill in the car on the ride home, so I kept the soup between my legs.
+     As I approached the house in my car, I noticed that our two large bins for trash and recyclables were brought up from the curb by the babysitter, but hadn't been placed into the garage.  Their proper place is in the garage, in front of where I park my car.  So I stopped my car in the middle of the driveway, opened the garage door, went to exit the car, but noticed that I had the soup in my lap.  I looked for a place to put the soup, and ended up resting it on the console between the two front seats.  The container was too large to fit in the cup holder, so I balanced it near the gear shift.
+     I quickly exited the car (as the soup was getting cold), grabbed both large bins and wheeled them to the front of the garage.  I turned them around for proper positioning and put each in its place.  I turned around to exit the garage, took two steps forwards, and for some reason looked up.  It was at this moment that I saw my car slowly driving towards me into the garage!
+     There are times in life where you need to process things quickly.  Like, with immediate quickness.  Instantly my mind thought: Who in the world is driving my car?  Wait, nobody is driving my car.  Oh shit, nobody is driving my car!  My car is going to run me over.  Get out of the way!  My car is heading to crash into the living room.  My car is also going to sideswipe my wife's car.  Do something, now!
+     Those thoughts took about a half second of time.  I sprung towards the car, to see if I could stop it.  I pushed on the driver's side front corner of the car for a moment, just enough to realize there was no way in hell to stop the forward drive momentum simply by pushing.  I realized I had to somehow get into the moving car and hit the brakes.
+     Unfortunately there is a support beam in the garage on the driver's side.  I had to approach the automobile, open the door, slide all the way in, close the door before the door took out the support beam and smashed shut on me, and then hit the brake pedal.  As I was performing this stuntman task, I could hear my passenger's side mirror start to scrape into my wife's car.  My initial opening of the door and slide-in was very smooth, but the quest to shut my door caused me to not be able to immediately hit the brake.  I managed to hit the brake pedal a moment later, as I bounced into the trash bin in the front of the garage.
+     Instantly my adrenaline started to pump.  My legs started shaking.  I put the car into park.  My wife ran into the garage due to all the noise.  My Toyota Camry was just one millimeter to the left of my wife's car.
+     What I surmise had happened was that the mild incline to the driveway had stopped my car.  I must have forgotten to put the gear into park as I was trying to find a place to set down the soup.  I had exited the car, but it was still stationary.  While I was placing the refuse bins back into the garage, the engine must have revved enough to cause the car to start to drive forwards.
+     Thankfully, the physical damage was very minimal.  The only contact with my wife's car was with my side mirror.  This left a small horizontal indentation in her driver's door.  I felt TERRIBLE about it.  Fortunately, this wasn't the first ding on her six-year-old car.  With careful maneuvering later that night, we were able to safely back out the cars without causing anymore damage.  The black line my mirror had made onto her car washed off, leaving just the small, subtle indentation in the door.  There was no damage to my car.
+     When I started thinking about things, I realized I had been fortunate to see the car coming.  If I had dilly-dallied putting the trash bins away, I could have been struck  from behind and not seen my Toyota driving into the garage.  In addition to potentially getting run-over from behind, I could have gotten tangled up and injured trying to get into the moving car.  My car could have crashed through the garage into the living room and injured my family. 
+     It was at this point that I realized I had gotten lucky.  No insurance claims were needed.  I was stressed, but would be okay.  My sweet wife was super supportive and didn't say a word about it, despite me hitting her car.  I possibly could have been killed, but I would now instead continue living a normal Thursday night.  The potential-for-mortality realization really shook me up.
+     As many of my blog readers know, this year I decided not to have any alcohol on weekdays, in an attempt to minimize empty calories.  Well, let me say that evening I had to make an exception to the rule.  I remember my late grandfather, who served in the Pacific during WWII, told stories of how when his ship was torpedoed by the Japanese, they gave the sailors whiskey to calm their nerves.  That sounded very reasonable.  I poured some Blanton's.  I drank this steadily, but I was still jittery.  I needed something stronger.  I next poured 2 ounces of Stagg, Jr at 130 proof.  By the time I was halfway though that, I had finally calmed down.
+    It was a night I would never forget.  Someone up above must have been looking out for me.  I had almost killed myself, and I had crashed into my own family's car!  It wasn't my greatest moment.  But there was one redeeming aspect of the situation:  despite the scraping, the crash, and my stuntman acrobatics, the soup never spilled!
+
+     Leave any thoughts or comments below; I'd love to hear from you.  I'd also be super thrilled for you to follow me on Twitter by clicking [here](<https://twitter.com/OldFashionedDr>)!  Have a great one!

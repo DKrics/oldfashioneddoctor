@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FilterChips from '../components/FilterChips.astro';
+import PostCard from '../components/PostCard.astro';
+import { CATEGORY_META } from '../lib/site';
+import { postsInCategory } from '../lib/posts';
+
+const posts = await postsInCategory('Medicine');
+const meta = CATEGORY_META.Medicine;
+---
+<BaseLayout title="Medicine" description={meta.blurb}>
+  <div class="wrap">
+    <p class="kicker" style="color: var(--amber)">{meta.kicker}</p>
+    <h1 style="font-family: var(--serif-display); font-size: clamp(2rem,5vw,3.2rem); letter-spacing:-0.03em; margin: 0 0 0.5rem;">Medicine</h1>
+    <p class="page-intro">{meta.blurb} {posts.length} posts.</p>
+    <FilterChips active="Medicine" />
+    <div class="triptych">
+      {posts.map((p) => <PostCard post={p} />)}
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { tagSlug } from '../../lib/site';
+import { allPosts, allTags } from '../../lib/posts';
+
+export async function getStaticPaths() {
+  const posts = await allPosts();
+  const tags = allTags(posts);
+  return tags.map(({ tag }) => ({
+    params: { tag: tagSlug(tag) },
+    props: {
+      label: tag,
+      tagged: posts.filter((p) => p.data.tags.some((t) => tagSlug(t) === tagSlug(tag))),
+    },
+  }));
+}
+
+const { label, tagged } = Astro.props;
+---
+<BaseLayout title={label} description={`Essays labeled ${label} in Old Fashioned Doctor.`}>
+  <div class="wrap">
+    <p class="kicker" style="color: var(--amber)">Label</p>
+    <h1 style="font-family: var(--serif-display); font-size: clamp(2rem,5vw,3.2rem); letter-spacing:-0.03em; margin: 0 0 0.4rem;">{label}</h1>
+    <p class="page-intro">{tagged.length} {tagged.length === 1 ? 'essay' : 'essays'}</p>
+    <div class="triptych">
+      {tagged.map((p) => <PostCard post={p} />)}
+    </div>
+  </div>
+</BaseLayout>
