@@ -2,6 +2,8 @@
 
 Overnight (quiet): site work is **done** on branch `site`. Essay prose untouched. All **24** posts remain. Blogger comments **not** imported.
 
+Keeper `2026-09-11 00:52 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. Cusdis.com HTTP **521**. No Squarespace/Google session on the box browser.
+
 `npm run build` **green** (Astro + Pagefind indexed 24 pages).
 
 ## Live preview (use this until DNS cutover)
@@ -27,13 +29,14 @@ Repo is intentionally on **github.io preview mode** until you flip Squarespace D
 
 - Branch `site` is the deploy branch (Actions workflow on push to `site`)
 - `gh` authenticated as **DKrics** (`repo` + `workflow`)
-- `main` can be fast-forward/merged from `site` **without force-push** (merge dry-run clean)
-- Do **not** force-push `main`
+- Deploy stays on **`site`** (Actions). Do **not** force-push `main`
+- `origin/main` is a divergent simpler rebuild; agents will not force-push
 
 ## Blocked on Homey (no live DNS changes from agents)
 
 1. **Squarespace DNS** → GitHub Pages (apex still Blogger `216.239.32/34/36/38.21`)
 2. **Cusdis** App ID secret (hosted cusdis.com was HTTP **521** overnight)
+3. Box browser login for Squarespace/Google (still at sign-in walls)
 
 Exact click-paths: see `MORNING-STATUS.md`.
 
