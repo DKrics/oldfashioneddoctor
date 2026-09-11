@@ -2,7 +2,7 @@
 
 Overnight (quiet): site work is **done** on branch `site`. Essay prose untouched. All **24** posts remain. Blogger comments **not** imported.
 
-Keeper `2026-09-11 02:55 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. Cusdis.com HTTP **521**. No Squarespace/Google session on the box browser. GitHub Pages `cname` null (preview mode).
+Keeper `2026-09-11 03:55 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. Cusdis.com HTTP **521**. No Squarespace/Google session on the box browser. GitHub Pages `cname` null (preview mode).
 
 `npm run build` **green** (Astro + Pagefind indexed 24 pages).
 
@@ -57,7 +57,3 @@ public/images/covers/good-doctors.jpg
 public/images/covers/medicare-plan.jpg
 public/images/og-default.jpg
 ```
-
-## Note on `main` (2026-09-11 overnight)
-
-`origin/main` is a **divergent** simpler static rebuild (unrelated history from `site`). A normal push of Astro `site` → `main` is **rejected without force**. Deploy stays on **`site`** (Actions). Homey: either keep `site` as the source of truth, or explicitly authorize replacing `main` (force/orphan) — agents will not force-push.
