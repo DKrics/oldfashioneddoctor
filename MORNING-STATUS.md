@@ -1,35 +1,56 @@
-# Morning status — Old Fashioned Doctor (quiet overnight → brief you at 7:30 AM Chicago)
+# Morning brief — Old Fashioned Doctor
 
-Homey: work continues hourly via keeper routine. No chat pings before **7:30 AM America/Chicago**.
+Quiet overnight. Preview is live; **you** own DNS + Cusdis. Agents did **not** change live DNS.
 
-## Live preview (FIXED ~4:54 UTC)
+## Preview (ready now)
 
-**Hard-refresh:** https://dkrics.github.io/oldfashioneddoctor/
+https://dkrics.github.io/oldfashioneddoctor/
 
-Confirmed serving **Astro** (not Blogger): cream/amber palette, `Drinks` nav, `covers/` hero images, CSS 200.
+Hard-refresh. Astro, covers, Drinks, cream/amber. `npm run build` green. Branch `site` deploys via Actions.
 
-Earlier you saw Blogger because GitHub Pages had a custom-domain CNAME and redirected github.io → oldfashioneddoctor.com (still on Blogger DNS). CNAME cleared for preview; `base` set to `/oldfashioneddoctor/` until DNS cutover.
+## 1) Cusdis App ID (comments)
 
-## Done
+Host was **521** overnight — retry when [cusdis.com](https://cusdis.com) loads.
 
-- All 24 posts + per-post covers + SEO + moderated comments UI (no spam import)
-- Branch `site` pushed; Actions deploys green
-- Hourly keeper routine: `ofd-cutover-keeper` (quiet until 7:30 AM Chicago)
+1. Open https://cusdis.com → **Start for free**
+2. Sign in with your private Google/GitHub (dashboard stays off the public journal)
+3. **+ New website**: Name `Old Fashioned Doctor`, Domain `oldfashioneddoctor.com`
+4. Copy **App ID** from Embed (`data-app-id="…"`) or from the project URL `…/dashboard/project/<APP-ID>`
+5. In project settings: turn **on** email notify for new comments (Quick Approve)
+6. GitHub → repo `DKrics/oldfashioneddoctor` → **Settings → Secrets and variables → Actions → New repository secret**
+   - Name: `PUBLIC_CUSDIS_APP_ID`
+   - Value: that App ID
+7. **Actions → Deploy to GitHub Pages → Run workflow** (branch `site`)
+8. Approve comments in Cusdis dashboard (or email link). Do **not** import Blogger/Disqus comments.
 
-## Blocked on you after 7:30
+Until then: comments heading + disabled form + X handle only.
 
-1. **Squarespace DNS** (login required — no session on box overnight)
-   - Apex A → `185.199.108.153` `.109.153` `.110.153` `.111.153`
-   - www CNAME → `dkrics.github.io`
-   - Then we restore custom-domain CNAME + `base: '/'` and enable HTTPS
-2. **Cusdis** still down (521) — comments need `PUBLIC_CUSDIS_APP_ID` when host is back
+## 2) Squarespace DNS cutover (do this when ready)
 
-## Color scheme + graphics note
+Apex still points at Blogger (`216.239.*`). Keep Blogger until HTTPS on the new site is confirmed.
 
-The redesign you previewed earlier (cream paper, dark brown chrome, amber accents, stethoscope hero, per-post covers) is what’s on the Astro preview link above. It was never on Blogger — only looked “missing” while the link redirected to Blogger.
+1. Squarespace → Domains → `oldfashioneddoctor.com` → **DNS settings**
+2. Apex **A** records (remove/replace Blogger A’s):
+   - `185.199.108.153`
+   - `185.199.109.153`
+   - `185.199.110.153`
+   - `185.199.111.153`
+3. `www` **CNAME** → `dkrics.github.io`
+4. Tell OFD (or wait for the next keeper) — we then:
+   - Restore `public/CNAME` = `oldfashioneddoctor.com` (from `CNAME.example.live`)
+   - Set `astro.config.mjs` to `site: 'https://oldfashioneddoctor.com'`, `base: '/'`
+   - Push `site` → green Actions deploy
+   - GitHub **Settings → Pages → Custom domain** = `oldfashioneddoctor.com` → wait for check → enable **HTTPS**
+5. Verify https://oldfashioneddoctor.com serves Astro (not Blogger), then retire Blogger custom domain
 
-## Keeper check (2026-09-11 04:57 UTC)
-- Preview still Astro with covers/Drinks.
-- Apex DNS still Blogger (216.239.*).
-- Cusdis: host responding with errors (not signup-ready).
-- No Homey ping (quiet until 7:30 America/Chicago).
+## Do not
+
+- Force-push `main`
+- Import old Blogger comments
+- Invent new posts
+
+## Done overnight
+
+- All 24 heroes/covers filled; build green
+- `STATUS.md` + this file updated for morning
+- `main` sync from `site` prepared (no force)
