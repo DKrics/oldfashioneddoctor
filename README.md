@@ -30,6 +30,6 @@ See `STATUS.md` for the Squarespace DNS → GitHub Pages steps.
 
 Feedback is via X only for identity: [@OldFashionedDr](https://x.com/OldFashionedDr). There is no public email address.
 
-Each essay has a comments box (Cusdis, moderated). Name and email are required; email is never published; nothing is shown until approved. Set `PUBLIC_CUSDIS_APP_ID` (see `STATUS.md` and `.env.example`). Do not import old Blogger comments.
+Each essay has a comments box that emails a note for review (Web3Forms). Name and email are required; email is never published; nothing appears on the page. Set `PUBLIC_WEB3FORMS_ACCESS_KEY` (see `STATUS.md` and `.env.example`). Do not import old Blogger comments.
 
 Do not republish without permission. Linking is okay.

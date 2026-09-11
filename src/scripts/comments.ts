@@ -1,134 +1,26 @@
-type CommentItem = {
-  id: string;
-  by_nickname?: string;
-  parsedContent?: string;
-  content?: string;
-  parsedCreatedAt?: string;
-  createdAt?: string;
-  moderator?: { displayName?: string } | null;
-  replies?: { data?: CommentItem[] };
-};
+const ENDPOINT = 'https://api.web3forms.com/submit';
 
-type ListPayload = {
-  data?: {
-    data?: CommentItem[];
-    commentCount?: number;
-  };
-};
-
-const root = document.querySelector<HTMLElement>('[data-comments-config]');
 const form = document.querySelector<HTMLFormElement>('[data-comments-form]');
-const listEl = document.querySelector<HTMLOListElement>('[data-comments-list]');
-const emptyEl = document.querySelector<HTMLElement>('[data-comments-empty]');
 const msgEl = document.querySelector<HTMLElement>('[data-comments-msg]');
-const replyNote = document.querySelector<HTMLElement>('[data-comments-replying]');
-const cancelReply = document.querySelector<HTMLButtonElement>('[data-comments-cancel-reply]');
-const parentInput = form?.querySelector<HTMLInputElement>('input[name="parentId"]');
 
-if (root && form && listEl) {
-  const host = root.dataset.host || 'https://cusdis.com';
-  const appId = root.dataset.appId || '';
-  const pageId = root.dataset.pageId || '';
-  const pageUrl = root.dataset.pageUrl || '';
-  const pageTitle = root.dataset.pageTitle || '';
-  const api = `${host}/api/open/comments`;
+function showMsg(text: string, kind: 'ok' | 'err' = 'ok') {
+  if (!msgEl) return;
+  msgEl.hidden = false;
+  msgEl.textContent = text;
+  msgEl.classList.toggle('is-error', kind === 'err');
+}
 
-  function showMsg(text: string, kind: 'ok' | 'err' = 'ok') {
-    if (!msgEl) return;
-    msgEl.hidden = false;
-    msgEl.textContent = text;
-    msgEl.classList.toggle('is-error', kind === 'err');
-  }
-
-  function escapeText(value: string): string {
-    const el = document.createElement('div');
-    el.textContent = value;
-    return el.innerHTML;
-  }
-
-  function safeHtml(html: string): string {
-    const doc = new DOMParser().parseFromString(html, 'text/html');
-    doc.querySelectorAll('script, iframe, object, embed, form, link, meta').forEach((n) => n.remove());
-    doc.querySelectorAll('*').forEach((el) => {
-      for (const attr of [...el.attributes]) {
-        const name = attr.name.toLowerCase();
-        const val = attr.value.trim().toLowerCase();
-        if (name.startsWith('on') || val.startsWith('javascript:')) el.removeAttribute(attr.name);
-      }
-    });
-    return doc.body.innerHTML;
-  }
-
-  function renderItem(item: CommentItem): HTMLLIElement {
-    const li = document.createElement('li');
-    li.className = 'comment-item';
-    const name = item.by_nickname || 'Reader';
-    const when = item.parsedCreatedAt || '';
-    const body = item.parsedContent ? safeHtml(item.parsedContent) : `<p>${escapeText(item.content || '')}</p>`;
-    const mod = item.moderator?.displayName ? `<span class="comment-mod">MOD</span>` : '';
-    li.innerHTML = `
-      <header class="comment-meta">
-        <strong>${escapeText(name)}</strong>
-        ${mod}
-        ${when ? `<time>${escapeText(when)}</time>` : ''}
-      </header>
-      <div class="comment-body">${body}</div>
-      <button type="button" class="comment-reply" data-reply="${escapeText(item.id)}">Reply</button>
-    `;
-    const replies = item.replies?.data || [];
-    if (replies.length) {
-      const sub = document.createElement('ol');
-      sub.className = 'comment-thread nested';
-      replies.forEach((r) => sub.appendChild(renderItem(r)));
-      li.appendChild(sub);
-    }
-    return li;
-  }
-
-  async function loadComments() {
-    try {
-      const offset = String(-new Date().getTimezoneOffset() / 60);
-      const url = `${api}?appId=${encodeURIComponent(appId)}&pageId=${encodeURIComponent(pageId)}`;
-      const res = await fetch(url, { headers: { 'x-timezone-offset': offset } });
-      if (!res.ok) throw new Error('load failed');
-      const json = (await res.json()) as ListPayload;
-      const items = json.data?.data ?? [];
-      listEl.innerHTML = '';
-      items.forEach((item) => listEl.appendChild(renderItem(item)));
-      if (emptyEl) emptyEl.hidden = items.length > 0;
-    } catch {
-      if (emptyEl) {
-        emptyEl.hidden = false;
-        emptyEl.textContent = 'Comments could not be loaded just now. Try again later, or write on X.';
-      }
-    }
-  }
-
-  function setReply(id: string | null) {
-    if (!parentInput) return;
-    parentInput.value = id || '';
-    if (replyNote) replyNote.hidden = !id;
-    if (id) form.querySelector<HTMLTextAreaElement>('textarea')?.focus();
-  }
-
-  listEl.addEventListener('click', (ev) => {
-    const btn = (ev.target as HTMLElement).closest<HTMLButtonElement>('[data-reply]');
-    if (!btn) return;
-    setReply(btn.dataset.reply || null);
-  });
-
-  cancelReply?.addEventListener('click', () => setReply(null));
-
+if (form) {
   form.addEventListener('submit', async (ev) => {
     ev.preventDefault();
     const data = new FormData(form);
-    const nickname = String(data.get('nickname') || '').trim();
+    const name = String(data.get('name') || '').trim();
     const email = String(data.get('email') || '').trim();
-    const content = String(data.get('content') || '').trim();
-    const parentId = String(data.get('parentId') || '').trim();
-    const acceptNotify = Boolean(data.get('acceptNotify'));
+    const message = String(data.get('message') || '').trim();
+    const honeypot = String(data.get('website') || '').trim();
+    const botcheck = Boolean(data.get('botcheck'));
 
-    if (!nickname) {
+    if (!name) {
       showMsg('Name is required.', 'err');
       return;
     }
@@ -136,39 +28,60 @@ if (root && form && listEl) {
       showMsg('A valid email is required. It is never published.', 'err');
       return;
     }
-    if (!content) {
+    if (!message) {
       showMsg('Write a comment before sending.', 'err');
+      return;
+    }
+
+    if (honeypot || botcheck) {
+      form.reset();
+      showMsg('Thanks — sent for review');
+      return;
+    }
+
+    const accessKey = String(data.get('access_key') || '').trim();
+    if (!accessKey) {
+      showMsg('Comments are not connected yet.', 'err');
       return;
     }
 
     const submit = form.querySelector<HTMLButtonElement>('button[type="submit"]');
     if (submit) submit.disabled = true;
+
+    const payload = {
+      access_key: accessKey,
+      name,
+      email,
+      message,
+      subject: String(data.get('subject') || `Comment: ${data.get('pageTitle') || ''}`),
+      from_name: name,
+      replyto: email,
+      pageTitle: String(data.get('pageTitle') || ''),
+      pageUrl: String(data.get('pageUrl') || ''),
+      pageId: String(data.get('pageId') || ''),
+    };
+
     try {
-      const res = await fetch(api, {
+      const res = await fetch(ENDPOINT, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          appId,
-          pageId,
-          pageUrl,
-          pageTitle,
-          nickname,
-          email,
-          content,
-          parentId: parentId || undefined,
-          acceptNotify,
-        }),
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(payload),
       });
-      if (!res.ok) throw new Error('send failed');
+      const json = (await res.json().catch(() => null)) as
+        | { success?: boolean; message?: string }
+        | null;
+      if (!res.ok || !json?.success) {
+        throw new Error(json?.message || 'send failed');
+      }
       form.reset();
-      setReply(null);
-      showMsg('Sent. It will not appear until Old Fashioned Doctor approves it.');
+      showMsg('Thanks — sent for review');
     } catch {
-      showMsg('Could not send just now. Try again, or write to @OldFashionedDr on X.', 'err');
+      showMsg('Could not send. Try again, or write to @OldFashionedDr on X.', 'err');
     } finally {
       if (submit) submit.disabled = false;
     }
   });
-
-  loadComments();
 }

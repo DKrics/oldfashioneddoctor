@@ -1,5 +1,5 @@
 ---
-import { CUSDIS, SITE } from '../lib/site';
+import { COMMENTS, SITE } from '../lib/site';
 
 interface Props {
   pageId: string;
@@ -8,22 +8,18 @@ interface Props {
 }
 
 const { pageId, pageUrl, pageTitle } = Astro.props;
-const ready = Boolean(CUSDIS.appId);
+const ready = Boolean(COMMENTS.accessKey);
 ---
 <section class="comments" id="comments" data-pagefind-ignore>
   <p class="kicker">The waiting room</p>
   <h2>Comments</h2>
   <p class="comments-lede">
     Name, email, and a note. Email is required and is never published.
-    Nothing appears here until {SITE.author} approves it.
+    Notes go to the journal for review. They do not appear on this page.
   </p>
 
   {ready ? (
-    <>
-      <p class="comments-msg" data-comments-msg hidden></p>
-      <ol class="comment-thread" data-comments-list></ol>
-      <p class="comments-empty" data-comments-empty>No approved comments yet.</p>
-    </>
+    <p class="comments-msg" data-comments-msg hidden></p>
   ) : (
     <div class="comments-setup">
       <p>
@@ -35,41 +31,30 @@ const ready = Boolean(CUSDIS.appId);
   )}
 
   <form class="comment-form" data-comments-form novalidate>
+    {ready && <input type="hidden" name="access_key" value={COMMENTS.accessKey} />}
+    <input type="hidden" name="pageTitle" value={pageTitle} />
+    <input type="hidden" name="pageUrl" value={pageUrl} />
+    <input type="hidden" name="pageId" value={pageId} />
+    <input type="hidden" name="subject" value={`Comment: ${pageTitle}`} />
+    <div class="comment-hp" aria-hidden="true">
+      <label for="comment-website">Website</label>
+      <input id="comment-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" />
+    </div>
     <div class="comment-row">
       <label for="comment-name">Name <span aria-hidden="true">*</span></label>
-      <input id="comment-name" name="nickname" type="text" required maxlength="80" autocomplete="name" disabled={!ready} />
+      <input id="comment-name" name="name" type="text" required maxlength="80" autocomplete="name" disabled={!ready} />
     </div>
     <div class="comment-row">
       <label for="comment-email">Email <span aria-hidden="true">*</span></label>
       <input id="comment-email" name="email" type="email" required maxlength="200" autocomplete="email" disabled={!ready} />
-      <small>Used only for moderation and optional reply notice. Never shown on the page.</small>
+      <small>Used only for moderation. Never shown on the page.</small>
     </div>
     <div class="comment-row">
       <label for="comment-body">Comment <span aria-hidden="true">*</span></label>
-      <textarea id="comment-body" name="content" required maxlength="4000" rows="6" disabled={!ready}></textarea>
+      <textarea id="comment-body" name="message" required maxlength="4000" rows="6" disabled={!ready}></textarea>
     </div>
-    <label class="comment-check">
-      <input type="checkbox" name="acceptNotify" disabled={!ready} />
-      Email me if there is a reply (you will get a confirmation link first)
-    </label>
-    <input type="hidden" name="parentId" value="" />
-    <p class="comment-replying" data-comments-replying hidden>
-      Replying to a comment.
-      <button type="button" data-comments-cancel-reply>Cancel reply</button>
-    </p>
     <button class="btn btn-ink" type="submit" disabled={!ready}>Send for review</button>
   </form>
-
-  {ready && (
-    <div
-      hidden
-      data-comments-config
-      data-host={CUSDIS.host}
-      data-app-id={CUSDIS.appId}
-      data-page-id={pageId}
-      data-page-url={pageUrl}
-      data-page-title={pageTitle}
-    ></div>
-  )}
 </section>
 {ready && <script src="../scripts/comments.ts"></script>}

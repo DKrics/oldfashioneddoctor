@@ -2,8 +2,7 @@
 /// <reference types="astro/client" />
 
 interface ImportMetaEnv {
-  readonly PUBLIC_CUSDIS_APP_ID?: string;
-  readonly PUBLIC_CUSDIS_HOST?: string;
+  readonly PUBLIC_WEB3FORMS_ACCESS_KEY?: string;
 }
 
 interface ImportMeta {

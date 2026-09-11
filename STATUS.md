@@ -2,7 +2,7 @@
 
 Overnight (quiet): site work is **done** on branch `site`. Essay prose untouched. All **24** posts remain. Blogger comments **not** imported.
 
-Keeper `2026-09-11 13:52 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. `www` → `ghs.google.com`. Cusdis.com HTTP **521**. No usable Squarespace/Google session on the box browser (stale/absent auth; no Google SID/HSID; account.squarespace.com → login OAuth). GitHub Pages `cname` null (preview mode). `gh` CLI authenticated as DKrics.
+Keeper `2026-09-11 13:52 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. `www` → `ghs.google.com`. Hosted Cusdis dropped (cusdis.com HTTP **521**); comments are now an email form pending `PUBLIC_WEB3FORMS_ACCESS_KEY`. No usable Squarespace/Google session on the box browser (stale/absent auth; no Google SID/HSID; account.squarespace.com → login OAuth). GitHub Pages `cname` null (preview mode). `gh` CLI authenticated as DKrics.
 
 `npm run build` **green** (Astro + Pagefind indexed 24 pages).
 
@@ -23,7 +23,7 @@ Repo is intentionally on **github.io preview mode** until you flip Squarespace D
 - SEO: titles, descriptions, canonicals, OG/Twitter, sitemap, robots, RSS, JSON-LD `Blog` / `BlogPosting`, author **Old Fashioned Doctor** only
 - Drinks rename (`/cocktails/` → `/drinks/`), Pagefind search, Blogger path redirects under `public/2017`, `public/2018`, `public/p`
 - Feedback via X only: [@OldFashionedDr](https://x.com/OldFashionedDr)
-- Moderated comments UI (`Comments.astro` + Cusdis client): email required, nothing public until you approve. Empty until `PUBLIC_CUSDIS_APP_ID` is set
+- Comments UI (`Comments.astro` + Web3Forms email POST): Name / Email / Comment required. Email never published. No on-page thread — notes go to the private inbox for review. Disabled until `PUBLIC_WEB3FORMS_ACCESS_KEY` is set. X remains the public alternate.
 
 ## Git
 
@@ -35,7 +35,7 @@ Repo is intentionally on **github.io preview mode** until you flip Squarespace D
 ## Blocked on Homey (no live DNS changes from agents)
 
 1. **Squarespace DNS** → GitHub Pages (apex still Blogger `216.239.32/34/36/38.21`)
-2. **Cusdis** App ID secret (hosted cusdis.com still HTTP **521** as of `2026-09-11 13:52 CDT`)
+2. **Web3Forms** access key secret (`PUBLIC_WEB3FORMS_ACCESS_KEY`) so the comments form can email notes
 3. Box browser login for Squarespace/Google (still at sign-in walls)
 
 Exact click-paths: see `MORNING-STATUS.md`.

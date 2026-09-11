@@ -11,9 +11,9 @@ export const SITE = {
   ogImage: '/images/og-default.jpg',
 } as const;
 
-export const CUSDIS = {
-  host: (import.meta.env.PUBLIC_CUSDIS_HOST || 'https://cusdis.com').replace(/\/$/, ''),
-  appId: (import.meta.env.PUBLIC_CUSDIS_APP_ID || '').trim(),
+export const COMMENTS = {
+  endpoint: 'https://api.web3forms.com/submit',
+  accessKey: (import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY || '').trim(),
 } as const;
 
 export const CATEGORIES = ['Drinks', 'Medicine', 'Life'] as const;
