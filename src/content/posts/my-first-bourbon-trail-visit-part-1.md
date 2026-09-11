@@ -18,7 +18,8 @@ tags:
   - "Wheatley"
   - "whiskey"
 categories:
-  - Cocktails
+  - Drinks
+  - Life
 original_url: "https://www.oldfashioneddoctor.com/2017/11/my-first-bourbon-trail-visit-part-1.html"
 author: Old Fashioned Doctor
 description: "My family took me on a trip to Kentucky to visit a few distilleries. It was a birthday present to me, because they know my love of bourbon and rye. We made it to Louisville, which…"

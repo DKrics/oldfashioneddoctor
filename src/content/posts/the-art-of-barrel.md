@@ -22,7 +22,7 @@ tags:
   - "vieux carre"
   - "whiskey"
 categories:
-  - Cocktails
+  - Drinks
 original_url: "https://www.oldfashioneddoctor.com/2017/06/the-art-of-barrel.html"
 author: Old Fashioned Doctor
 description: "I am really into barrel-aged cocktails. Why? Let me tell you. It makes a delicious drink even more delicious. How? Magic. (Not really, there is a ton of science behind it. We’ll…"

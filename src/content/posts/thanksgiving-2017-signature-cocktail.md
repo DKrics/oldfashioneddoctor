@@ -20,7 +20,8 @@ tags:
   - "signature drink"
   - "whiskey"
 categories:
-  - Cocktails
+  - Drinks
+  - Life
 original_url: "https://www.oldfashioneddoctor.com/2017/11/thanksgiving-2017-signature-cocktail.html"
 author: Old Fashioned Doctor
 description: "Welcome to my blog! Today's post is full of information regarding how to make your Thanksgiving celebration this week incredible, from a libations standpoint. Previously, I have…"

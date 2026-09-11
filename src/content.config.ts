@@ -1,7 +1,7 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
-export const CATEGORIES = ['Medicine', 'Cocktails', 'Life'] as const;
+export const CATEGORIES = ['Drinks', 'Medicine', 'Life'] as const;
 
 const posts = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/posts' }),
@@ -15,7 +15,7 @@ const posts = defineCollection({
     original_url: z.string().optional(),
     author: z.string().default('Old Fashioned Doctor'),
     description: z.string(),
-    hero: z.string().optional(),
+    hero: z.string(),
   }),
 });
 

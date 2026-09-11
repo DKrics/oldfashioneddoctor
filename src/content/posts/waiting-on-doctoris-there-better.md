@@ -11,9 +11,11 @@ tags:
   - "punctuality"
 categories:
   - Medicine
+  - Life
 original_url: "https://www.oldfashioneddoctor.com/2017/12/waiting-on-doctoris-there-better.html"
 author: Old Fashioned Doctor
 description: "My wife had an appointment with her doctor today. Her doctor is one of my partners. She texted me when it was 35 minutes after her scheduled appointment. She had been roomed, but…"
+hero: /images/covers/waiting-on-doctor.jpg
 ---
 My wife had an appointment with her doctor today.  Her doctor is one of my partners.  She texted me when it was 35 minutes after her scheduled appointment.  She had been roomed, but still hadn't been seen.  She was frustrated.  She has a job.  She has meetings.  She didn't like the fact that her doctor was running over 35 minutes behind.  I think she was ultimately seen by the doctor 40-45 minutes after her scheduled appointment time.
      "You've got to expect at least 30 minutes after the scheduled appointment time until you are seen by the doctor," I explained.  "Anything before that, and you're lucky.  If it's been 35 minutes, that means she is running only 5 minutes late."

@@ -17,7 +17,7 @@ tags:
   - "sazerac"
   - "technique"
 categories:
-  - Cocktails
+  - Drinks
 original_url: "https://www.oldfashioneddoctor.com/2017/11/diagnosing-and-treating-bad-sazerac.html"
 author: Old Fashioned Doctor
 description: "After visiting Kentucky's Bourbon Trail two weeks ago (see here and here) and buying a new rye (Russell's Reserve Single Barrel) and fancy bitters (Peychaud's Barrel Aged), I was…"

@@ -12,9 +12,11 @@ tags:
   - "Stagg Jr."
 categories:
   - Life
+  - Drinks
 original_url: "https://www.oldfashioneddoctor.com/2018/02/near-death-experience-ghost-rider-or.html"
 author: Old Fashioned Doctor
 description: "Three weeks ago my son had a bad upper respiratory infection. Thankfully, it wasn't the flu. But he spent the day home from school. On the way home from work that evening, I…"
+hero: /images/covers/near-death-experience.jpg
 ---
 Three weeks ago my son had a bad upper respiratory infection.  Thankfully, it wasn't the flu.   But  he spent the day home from school.  On the way home from work that evening, I decided to pick up some chicken soup from a restaurant for him to have for dinner to help him feel better.  The soup was in a plastic quart container, and I didn't want it to spill in the car on the ride home, so I kept the soup between my legs.
      As I approached the house in my car, I noticed that our two large bins for trash and recyclables were brought up from the curb by the babysitter, but hadn't been placed into the garage.  Their proper place is in the garage, in front of where I park my car.  So I stopped my car in the middle of the driveway, opened the garage door, went to exit the car, but noticed that I had the soup in my lap.  I looked for a place to put the soup, and ended up resting it on the console between the two front seats.  The container was too large to fit in the cup holder, so I balanced it near the gear shift.

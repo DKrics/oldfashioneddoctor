@@ -8,7 +8,7 @@ import { allPosts, postsInCategory } from '../lib/posts';
 const posts = await allPosts();
 const featured = posts[0];
 const nextTwo = posts.slice(1, 3);
-const cocktails = (await postsInCategory('Cocktails')).slice(0, 3);
+const drinks = (await postsInCategory('Drinks')).slice(0, 3);
 const medicine = (await postsInCategory('Medicine')).slice(0, 3);
 const life = (await postsInCategory('Life')).slice(0, 3);
 const hero = withBase('images/hero.jpg');
@@ -44,11 +44,11 @@ const hero = withBase('images/hero.jpg');
     </div>
 
     <div class="section-head">
-      <h2>{CATEGORY_META.Cocktails.kicker}</h2>
-      <p><a href={withBase('cocktails/')}>All cocktails</a></p>
+      <h2>{CATEGORY_META.Drinks.kicker}</h2>
+      <p><a href={withBase('drinks/')}>All drinks</a></p>
     </div>
     <div class="triptych">
-      {cocktails.map((p) => <PostCard post={p} />)}
+      {drinks.map((p) => <PostCard post={p} />)}
     </div>
 
     <div class="section-head">

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dkrics.github.io/oldfashioneddoctor/sitemap-index.xml
+Sitemap: https://oldfashioneddoctor.com/sitemap-index.xml

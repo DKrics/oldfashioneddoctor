@@ -21,10 +21,14 @@ import { SITE, CATEGORIES, CATEGORY_META, withBase } from '../lib/site';
     <div>
       <p><strong>Elsewhere</strong></p>
       <ul>
-        <li><a href={SITE.twitter}>{SITE.twitterHandle}</a></li>
+        <li><a href={SITE.twitter} rel="me noopener">{SITE.twitterHandle}</a></li>
         <li><a href={withBase('about/')}>About</a></li>
         <li><a href={withBase('rss.xml')}>RSS</a></li>
       </ul>
+      <p class="feedback-note">
+        Feedback only via X:
+        <a href={SITE.twitter} rel="me noopener">{SITE.twitterHandle}</a>
+      </p>
     </div>
   </div>
   <p class="fineprint">{SITE.copyright}</p>

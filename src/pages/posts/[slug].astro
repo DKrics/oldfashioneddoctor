@@ -1,8 +1,11 @@
 ---
 import { render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import Feedback from '../../components/Feedback.astro';
+import Comments from '../../components/Comments.astro';
 import { allPosts, readingMinutes, relatedPosts } from '../../lib/posts';
-import { formatDate, withBase, categoryHref, tagSlug } from '../../lib/site';
+import { formatDate, withBase, categoryHref, tagSlug, blogPostingJsonLd, SITE, absoluteUrl } from '../../lib/site';
 import type { Post } from '../../lib/posts';
 
 export async function getStaticPaths() {
@@ -19,11 +22,28 @@ interface Props {
 }
 const { post, posts } = Astro.props;
 const { Content } = await render(post);
-const hero = post.data.hero ? withBase(post.data.hero) : undefined;
+const hero = withBase(post.data.hero);
 const mins = readingMinutes(post.body || '');
 const related = relatedPosts(post, posts, 3);
+const canonicalPath = Astro.url.pathname;
+const jsonLd = blogPostingJsonLd({
+  title: post.data.title,
+  description: post.data.description,
+  url: new URL(canonicalPath, Astro.site).toString(),
+  image: new URL(hero, Astro.site).toString(),
+  published: post.data.published,
+  updated: post.data.updated,
+});
 ---
-<BaseLayout title={post.data.title} description={post.data.description} image={hero}>
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  image={hero}
+  type="article"
+  jsonLd={jsonLd}
+  published={post.data.published}
+  updated={post.data.updated}
+>
   <article data-pagefind-body>
     <header class="post-hero">
       <div class="cats">
@@ -33,14 +53,12 @@ const related = relatedPosts(post, posts, 3);
       </div>
       <h1 data-pagefind-meta="title">{post.data.title}</h1>
       <p class="byline">
-        {formatDate(post.data.published)} · {post.data.author} · {mins} min read
+        {formatDate(post.data.published)} · {SITE.author} · {mins} min read
       </p>
     </header>
-    {hero && (
-      <div class="post-cover">
-        <img src={hero} alt="" data-pagefind-meta="image" />
-      </div>
-    )}
+    <div class="post-cover">
+      <img src={hero} alt="" data-pagefind-meta="image" />
+    </div>
     <div class="prose">
       <Content />
     </div>
@@ -51,20 +69,21 @@ const related = relatedPosts(post, posts, 3);
         ))}
       </p>
     )}
-    {related.length > 0 && (
-      <aside class="related wrap" data-pagefind-ignore>
-        <h2>Related essays</h2>
-        <div class="triptych">
-          {related.map((r) => (
-            <a class="card" href={withBase(`posts/${r.data.slug}/`)}>
-              <div class="card-body">
-                <h3>{r.data.title}</h3>
-                <p class="byline">{formatDate(r.data.published)}</p>
-              </div>
-            </a>
-          ))}
-        </div>
-      </aside>
-    )}
   </article>
+  <Comments
+    pageId={post.data.slug}
+    pageUrl={absoluteUrl(`posts/${post.data.slug}/`)}
+    pageTitle={post.data.title}
+  />
+  <Feedback />
+  {related.length > 0 && (
+    <aside class="related wrap" data-pagefind-ignore>
+      <h2>Related essays</h2>
+      <div class="triptych">
+        {related.map((r) => (
+          <PostCard post={r} />
+        ))}
+      </div>
+    </aside>
+  )}
 </BaseLayout>

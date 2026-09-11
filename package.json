@@ -6,7 +6,7 @@
   "description": "Old Fashioned Doctor — Medicine. Cocktails. Life.",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && pagefind --site dist",
     "preview": "astro preview"
   },
   "dependencies": {

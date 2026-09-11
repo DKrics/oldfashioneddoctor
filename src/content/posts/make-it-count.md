@@ -17,7 +17,8 @@ tags:
   - "Stagg Jr."
   - "Templeton"
 categories:
-  - Cocktails
+  - Drinks
+  - Life
 original_url: "https://www.oldfashioneddoctor.com/2018/02/make-it-count.html"
 author: Old Fashioned Doctor
 description: "As I successfully continue my goal to lose weight this new year, I have decided to only drink alcohol on the weekends. Between my trip to Kentucky's Bourbon Trail in October and…"

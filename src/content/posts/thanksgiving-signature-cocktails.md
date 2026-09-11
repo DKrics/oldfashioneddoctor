@@ -16,7 +16,7 @@ tags:
   - "St. Germain"
   - "thanksgiving"
 categories:
-  - Cocktails
+  - Drinks
 original_url: "https://www.oldfashioneddoctor.com/2017/11/thanksgiving-signature-cocktails.html"
 author: Old Fashioned Doctor
 description: "Thanksgiving 2017 is just around the corner. If you are hosting a meal for family or friends, you will want to differentiate this year's get-together from previous holidays by…"

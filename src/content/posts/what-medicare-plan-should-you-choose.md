@@ -15,6 +15,7 @@ categories:
 original_url: "https://www.oldfashioneddoctor.com/2017/11/what-medicare-plan-should-you-choose.html"
 author: Old Fashioned Doctor
 description: "The open enrollment period for Medicare is from October 15 through December 7. This means if you want to switch your Medicare plan, you have just under one week to do so. Last…"
+hero: /images/covers/medicare-plan.jpg
 ---
 The open enrollment period for Medicare is from October 15 through December 7.  This means if you want to switch your Medicare plan, you have just under one week to do so.  Last week I saw a patient in the office who was very nervous regarding a potential switch.  She was so worried, that her blood pressure was elevated just thinking about it.  Her current situation is that she has traditional Medicare, and an additional supplement plan.  She was recently contacted by a company regarding a Medicare Advantage plan, with promises of cost savings for her.  Who doesn't want to save money?  She wanted to know my thoughts on her situation.  I told her to consider the following issues:
 

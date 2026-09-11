@@ -13,7 +13,8 @@ tags:
   - "whiskey"
   - "Wild Turkey"
 categories:
-  - Cocktails
+  - Drinks
+  - Life
 original_url: "https://www.oldfashioneddoctor.com/2017/11/my-first-bourbon-trail-visit-part-2.html"
 author: Old Fashioned Doctor
 description: "This is the second part of my trip to Kentucky. To see my first post regarding the beginning of my trip, see here. Upon leaving the Buffalo Trace distillery, we made our way to…"

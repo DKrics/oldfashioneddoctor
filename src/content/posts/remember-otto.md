@@ -19,8 +19,8 @@ tags:
   - "rye"
   - "USA"
 categories:
-  - Medicine
-  - Cocktails
+  - Drinks
+  - Life
 original_url: "https://www.oldfashioneddoctor.com/2017/09/remember-otto.html"
 author: Old Fashioned Doctor
 description: "A photograph originally published with this post is no longer hosted online. What makes a great cocktail? First and foremost, it needs to taste great. It also helps when the…"

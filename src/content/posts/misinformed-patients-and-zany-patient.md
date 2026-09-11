@@ -15,10 +15,11 @@ tags:
   - "monster"
   - "pregnancy"
 categories:
-  - Life
+  - Medicine
 original_url: "https://www.oldfashioneddoctor.com/2018/01/misinformed-patients-and-zany-patient.html"
 author: Old Fashioned Doctor
 description: "Welcome readers! This is my first posting in 2018 on a medical topic, so I thought it would be nice to make it a fun one. My wife tells me that \"everybody\" is writing blog posts…"
+hero: /images/covers/misinformed-patients.jpg
 ---
 Welcome readers!  This is my first posting in 2018 on a medical topic, so I thought it would be nice to make it a fun one.  My wife tells me that "everybody" is writing blog posts about Top 10 lists concerning 2017.  With that in mind (and since everybody is doing it), I wanted to share the Top 7 things patients have told me recently that are completely misinformed or off the wall:
 

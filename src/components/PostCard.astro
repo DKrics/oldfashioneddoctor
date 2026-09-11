@@ -9,13 +9,10 @@ interface Props {
 }
 const { post, feature = false, row = false } = Astro.props;
 const href = withBase(`posts/${post.data.slug}/`);
-const hero = post.data.hero ? withBase(post.data.hero) : '';
+const hero = withBase(post.data.hero);
 ---
 <a class:list={['card', feature && 'feature', row && 'row']} href={href}>
-  <div
-    class:list={['card-media', !hero && 'placeholder']}
-    style={hero ? `background-image:url('${hero}')` : undefined}
-  ></div>
+  <div class="card-media" style={`background-image:url('${hero}')`}></div>
   <div class="card-body">
     <div class="cats">
       {post.data.categories.map((c) => (

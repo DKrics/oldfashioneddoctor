@@ -5,15 +5,15 @@ import PostCard from '../components/PostCard.astro';
 import { CATEGORY_META } from '../lib/site';
 import { postsInCategory } from '../lib/posts';
 
-const posts = await postsInCategory('Cocktails');
-const meta = CATEGORY_META.Cocktails;
+const posts = await postsInCategory('Drinks');
+const meta = CATEGORY_META.Drinks;
 ---
-<BaseLayout title="Cocktails" description={meta.blurb}>
+<BaseLayout title="Drinks" description={meta.blurb}>
   <div class="wrap">
     <p class="kicker" style="color: var(--amber)">{meta.kicker}</p>
-    <h1 style="font-family: var(--serif-display); font-size: clamp(2rem,5vw,3.2rem); letter-spacing:-0.03em; margin: 0 0 0.5rem;">Cocktails</h1>
+    <h1 style="font-family: var(--serif-display); font-size: clamp(2rem,5vw,3.2rem); letter-spacing:-0.03em; margin: 0 0 0.5rem;">Drinks</h1>
     <p class="page-intro">{meta.blurb} {posts.length} posts.</p>
-    <FilterChips active="Cocktails" />
+    <FilterChips active="Drinks" />
     <div class="triptych">
       {posts.map((p) => <PostCard post={p} />)}
     </div>

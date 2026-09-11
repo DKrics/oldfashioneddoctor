@@ -10,7 +10,8 @@ tags:
   - "Missouri"
   - "Weston"
 categories:
-  - Cocktails
+  - Drinks
+  - Life
 original_url: "https://www.oldfashioneddoctor.com/2017/11/a-bourbon-distillery-without-bourbon-yet.html"
 author: Old Fashioned Doctor
 description: "My wife and I recently visited the Holladay Distillery in Weston, Missouri. It is billed as the oldest distillery west of the Mississippi River located on its original site. It is…"

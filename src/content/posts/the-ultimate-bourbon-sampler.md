@@ -10,7 +10,7 @@ tags:
   - "reviews"
   - "whiskey"
 categories:
-  - Cocktails
+  - Drinks
 original_url: "https://www.oldfashioneddoctor.com/2017/12/the-ultimate-bourbon-sampler.html"
 author: Old Fashioned Doctor
 description: "My sister-in-law got me a present for the holidays: Drinks by the Dram, Bourbon edition. Apparently, she ordered this from England, for her husband (my brother) and I. What a…"

@@ -15,9 +15,11 @@ tags:
   - "weight loss"
 categories:
   - Medicine
+  - Life
 original_url: "https://www.oldfashioneddoctor.com/2018/01/health-weight-loss-and-exercise-for-2018.html"
 author: Old Fashioned Doctor
 description: "Hello readers! If you are like me, up a few pounds due to stuffing your piehole between Thanksgiving and New Years, then you just might be interested in losing weight. Either…"
+hero: /images/covers/health-weight-loss.jpg
 ---
 Hello readers!  If you are like me, up a few pounds due to stuffing your piehole between Thanksgiving and New Years, then you just might be interested in losing weight.  Either that, or it is time to buy a bunch of new pants.  So, if you are interested in the Old Fashioned Doctor's weight loss tips, put on your sneakers, and get ready to learn.  But before I begin, you should know that this is general advice.  Your situation may be unique.  Discuss with your doctor prior to starting any exercise regimen or diet.  Now that the disclaimers are out of the way, here we go:
 

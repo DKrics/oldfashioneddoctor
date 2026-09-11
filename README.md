@@ -2,48 +2,34 @@
 
 A static journal for **Old Fashioned Doctor** — *Medicine. Cocktails. Life.*
 
-The public byline is **Old Fashioned Doctor**. Rebuilt from the public Blogger archive as a free GitHub Pages site (Astro + TypeScript).
+The public byline is **Old Fashioned Doctor**. Rebuilt from the public Blogger archive as a GitHub Pages site (Astro + TypeScript) for **https://oldfashioneddoctor.com**.
 
 ## Local
 
 From this directory:
 
-- `dev` — local server (open the printed URL; path includes `/oldfashioneddoctor/`)
-- `build` — static output in `dist/`
-- `preview` — preview the production build
+- `npm run dev` — local server
+- `npm run build` — static output in `dist/` (includes Pagefind search index)
+- `npm run preview` — preview the production build
 
-Package scripts are `dev`, `build`, and `preview`. The `base` path is `/oldfashioneddoctor/` so CSS, JS, and images work on GitHub project Pages.
+`site` is `https://oldfashioneddoctor.com` and `base` is `/`.
 
-## Live URL (now)
+## Custom domain cutover
 
-https://dkrics.github.io/oldfashioneddoctor/
+Canonical domain: **oldfashioneddoctor.com**. Do not change live DNS until you are ready. Keep Blogger live until the new site is confirmed.
 
-After the first push, set the repo Pages source to GitHub Actions (`.github/workflows/deploy.yml`).
-
-## Custom domain later (Squarespace DNS)
-
-Canonical domain: **oldfashioneddoctor.com**. Do not change live DNS or enable a GitHub custom domain until cutover. Keep Blogger live until the new site is confirmed.
-
-When you are ready:
-
-1. Confirm the project Pages URL looks right.
-2. In `astro.config.mjs`, set `site` to `https://oldfashioneddoctor.com` and `base` to `/`.
-3. Copy `CNAME.example` to `public/CNAME` (contents: `oldfashioneddoctor.com`).
-4. Update `public/robots.txt` sitemap URL.
-5. Point Squarespace DNS at GitHub Pages only at cutover.
-6. GitHub Settings → Pages → custom domain `oldfashioneddoctor.com`, then HTTPS.
-7. Keep Blogger up until verified, then retire it.
+See `STATUS.md` for the Squarespace DNS → GitHub Pages steps.
 
 ## Content
 
 - 24 essays in `src/content/posts/`
-- Images in `public/images/posts/` (copied from the Blogger export; no Blogger CDN hotlinks)
-- Old paths such as `/2018/02/make-it-count.html` redirect to the new slugs
-- Eight third-party images from 2017 are dead and omitted in place
+- Original photographs in `public/images/posts/`
+- Generated covers for posts that had no surviving photo: `public/images/covers/`
+- Default social card: `public/images/og-default.jpg`
+- Old Blogger paths such as `/2018/02/make-it-count.html` redirect to the new slugs
+
+Feedback is via X only for identity: [@OldFashionedDr](https://x.com/OldFashionedDr). There is no public email address.
+
+Each essay has a comments box (Cusdis, moderated). Name and email are required; email is never published; nothing is shown until approved. Set `PUBLIC_CUSDIS_APP_ID` (see `STATUS.md` and `.env.example`). Do not import old Blogger comments.
 
 Do not republish without permission. Linking is okay.
-
-
-Expected Pages URL: https://dkrics.github.io/oldfashioneddoctor/
-
-Later custom domain (do not change live DNS yet): oldfashioneddoctor.com

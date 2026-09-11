@@ -13,6 +13,7 @@ categories:
 original_url: "https://www.oldfashioneddoctor.com/2017/09/good-doctors-and-good-patients.html"
 author: Old Fashioned Doctor
 description: "What makes a good doctor? The answer probably depends on your needs. For one person, a good doctor may be one who calls out an antibiotic if she calls complaining of UTI symptoms.…"
+hero: /images/covers/good-doctors.jpg
 ---
 What makes a good doctor?  The answer probably depends on your needs.  For one person, a good doctor may be one who calls out an antibiotic if she calls complaining of UTI symptoms.  For another, a good doctor is one who is able to schedule you a same day appointment to have those symptoms evaluated in person and to run a urinalysis.  One patient may be looking for a physician who listens about not only his ailments, but also asks about his grandchildren.  Another patient might not care to have lengthy explanations or to know every possible medication side effect, but just wants the doctor to tell him what he should do to get better.  We all have different needs.
 

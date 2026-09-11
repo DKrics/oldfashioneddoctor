@@ -21,10 +21,11 @@ tags:
   - "vermouth"
   - "whiskey"
 categories:
-  - Cocktails
+  - Drinks
 original_url: "https://www.oldfashioneddoctor.com/2017/11/barrel-aging-and-recent-epic-cocktail.html"
 author: Old Fashioned Doctor
 description: "A photograph originally published with this post is no longer hosted online. Since beginning this blog, I have been excited about creating new cocktails and sharing the recipes…"
+hero: /images/covers/barrel-aging.jpg
 ---
 <p class="missing-photo"><em>A photograph originally published with this post is no longer hosted online.</em></p>
 

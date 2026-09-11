@@ -15,10 +15,11 @@ tags:
   - "mistakes"
   - "trialanderror #bartender"
 categories:
-  - Cocktails
+  - Drinks
 original_url: "https://www.oldfashioneddoctor.com/2017/11/recent-cocktail-fail-2.html"
 author: Old Fashioned Doctor
 description: "A photograph originally published with this post is no longer hosted online. I have been wanting to come up with a great signature cocktail for Thanksgiving 2017, which is less…"
+hero: /images/covers/cocktail-fail.jpg
 ---
 <p class="missing-photo"><em>A photograph originally published with this post is no longer hosted online.</em></p>
 

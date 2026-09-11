@@ -13,11 +13,12 @@ tags:
   - "office"
   - "whiskey"
 categories:
+  - Drinks
   - Medicine
-  - Cocktails
 original_url: "https://www.oldfashioneddoctor.com/2017/12/when-whiskey-and-healthcare-collide.html"
 author: Old Fashioned Doctor
 description: "As you may know from reading my blog, a few of my passions are practicing medicine (I'm a family practitioner), and discussing (and of course enjoying) the occasional cocktail or…"
+hero: /images/covers/whiskey-healthcare.jpg
 ---
 As you may know from reading my blog, a few of my passions are practicing medicine (I'm a family practitioner), and discussing (and of course enjoying) the occasional cocktail or spirit.  I blog about healthcare in general, as well as drinks.  I have a patient story for you that encompasses both of these topics.
      The day after Thanksgiving I saw a female who is in her late 40's in the office.  She was accompanied by her husband.  Three days prior (on Tuesday), she was getting ready to cook something for the holiday.  She opened a cabinet that was raised, and a bottle of vinegar immediately fell out of it, onto the floor.  She bent forwards to pick it up, and then a bottle of Jameson Irish Whiskey conked her on the top of her head, then hit the floor, and shattered.  (I know the saying regarding crying over spilled milk, but I imagine there is also one regarding Irish Whiskey, somewhere.)  Of course this hurt when the bottle hit her, but she told me she never lost consciousness.

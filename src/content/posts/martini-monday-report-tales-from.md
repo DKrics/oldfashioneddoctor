@@ -17,10 +17,12 @@ tags:
   - "party"
   - "pink squirrel"
 categories:
-  - Cocktails
+  - Drinks
+  - Life
 original_url: "https://www.oldfashioneddoctor.com/2017/12/martini-monday-report-tales-from.html"
 author: Old Fashioned Doctor
 description: "For the past 25 days I've been barrel aging some cocktails. As I wrote about here (click on the link for the recipes), I've had two different cocktails working: a Creole cocktail…"
+hero: /images/covers/martini-monday.jpg
 ---
 For the past 25 days I've been barrel aging some cocktails.  As I wrote about [here](/posts/barrel-aging-and-recent-epic-cocktail/) (click on the link for the recipes), I've had two different cocktails working: a Creole cocktail (a variation of a Manhattan, with cherry heering and Benedictine), and a classic martini.  Well, we had some company over this weekend, and I decided it was time to try out the drinks.
      Having never barrel aged a gin-based cocktail other than a Negroni, I was very eager to try my martini out.  After I transferred the drink from the barrel into a 750 ml bottle, I could instantly tell how the color of the drink had turned from clear into a lightly caramel-colored creation.  I added ice into a mixing glass, added 2.5 ounces of martini, and stirred well.  I strained into a glass, and used a slice of orange peel for garnish.  My company wanted dirty martinis, so they garnished theirs with olives and added a bit of olive juice.

@@ -15,11 +15,7 @@ const posts = await allPosts();
     <div class="archive-list">
       {posts.map((post) => (
         <a class="archive-item" href={withBase(`posts/${post.data.slug}/`)}>
-          {post.data.hero ? (
-            <img class="archive-thumb" src={withBase(post.data.hero)} alt="" />
-          ) : (
-            <div class="archive-thumb" style="background: linear-gradient(135deg,#3d2a1c,#b45309)"></div>
-          )}
+          <img class="archive-thumb" src={withBase(post.data.hero)} alt="" />
           <div>
             <h3>{post.data.title}</h3>
             <p class="byline">{post.data.categories.join(' · ')}</p>

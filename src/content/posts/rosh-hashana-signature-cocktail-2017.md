@@ -15,10 +15,12 @@ tags:
   - "Rosh Hashana"
   - "signature drink"
 categories:
-  - Cocktails
+  - Drinks
+  - Life
 original_url: "https://www.oldfashioneddoctor.com/2017/09/rosh-hashana-signature-cocktail-2017.html"
 author: Old Fashioned Doctor
 description: "One of the best parts about having a bunch of liquor in the house is creating your own cocktails. When my wife and I have company over for special occasions, I try to create a…"
+hero: /images/covers/rosh-hashana.jpg
 ---
 One of the best parts about having a bunch of liquor in the house is creating your own cocktails.  When my wife and I have company over for special occasions, I try to create a signature cocktail for the party, using holiday themes and flavors.
 

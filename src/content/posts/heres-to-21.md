@@ -11,10 +11,12 @@ tags:
   - "Repeal"
   - "whiskey"
 categories:
-  - Cocktails
+  - Drinks
+  - Life
 original_url: "https://www.oldfashioneddoctor.com/2017/12/heres-to-21.html"
 author: Old Fashioned Doctor
 description: "Today is \"National Repeal Day\"! On this day, December 5, in 1933 the 21st Amendment of the Constitution of the United States of America was ratified, which repealed the 18th…"
+hero: /images/covers/heres-to-21.jpg
 ---
 Today is "National Repeal Day"!  On this day, December 5,  in 1933 the 21st Amendment of the Constitution of the United States of America was ratified, which repealed the 18th Amendment.  The 18th Amendment established the Prohibition (of alcohol), which began on January 16, 1919.  For nearly 15 years alcohol was illegal for social consumption in the U.S.A., except when legally prescribed by a doctor for medicinal purposes.
      If you think about it, medicine 100 years ago was much different than it is today.  Alcohol was probably a very effective treatment for anxiety at the time (there was no Prozac or Xanax back then).  The Great War (World War One) ended only on November 11, 1918.  I'm not certain if there was a term for PTSD (post traumatic stress syndrome) in the parlance of that time.  "Shell-shocked" may be the equivalent.  Alcohol was used to calm those who had seen the horrors of the trench warfare in Europe.  A great article I found on Google regarding the distilleries that were allowed to produce whiskey during this time for medicinal purposes can be found [here](<http://chuckcowdery.blogspot.com/2014/03/who-had-medicinal-whiskey-licenses_7.html>). 
