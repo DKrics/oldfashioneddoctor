@@ -2,7 +2,7 @@
 
 Overnight (quiet): site work is **done** on branch `site`. Essay prose untouched. All **24** posts remain. Blogger comments **not** imported.
 
-Keeper `2026-09-11 15:57 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. `www` → `ghs.google.com`. Hosted Cusdis still HTTP **521** (abandoned). Comments email form still disabled pending `PUBLIC_WEB3FORMS_ACCESS_KEY` (secret not present). No Chrome Default cookie profile on box — no Squarespace/Google session. GitHub Pages `cname` null (preview mode). Latest Actions on `site` green. `gh` CLI authenticated as DKrics.
+Keeper `2026-09-11 16:55 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. `www` → `ghs.google.com`. Hosted Cusdis still HTTP **521** (abandoned). Comments email form still disabled pending `PUBLIC_WEB3FORMS_ACCESS_KEY` (secret not present). Box chrome-profile has only anonymous Squarespace cookies — no usable login. GitHub Pages `cname` null (preview mode). Latest Actions on `site` green. `gh` CLI authenticated as DKrics.
 
 `npm run build` **green** (Astro + Pagefind indexed 24 pages).
 
@@ -36,7 +36,7 @@ Repo is intentionally on **github.io preview mode** until you flip Squarespace D
 
 1. **Squarespace DNS** → GitHub Pages (apex still Blogger `216.239.32/34/36/38.21`)
 2. **Web3Forms** access key secret (`PUBLIC_WEB3FORMS_ACCESS_KEY`) so the comments form can email notes
-3. Box browser login for Squarespace/Google (still at sign-in walls)
+3. Box browser login for Squarespace/Google (anonymous cookies only; still at sign-in walls)
 
 Exact click-paths: see `MORNING-STATUS.md`.
 

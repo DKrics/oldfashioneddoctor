@@ -2,7 +2,7 @@
 
 Quiet overnight is over (after 7:30 AM CDT). Preview is live; **you** own DNS + the comments inbox key. Agents did **not** change live DNS.
 
-Keeper check `2026-09-11 15:57 CDT`: github.io Astro preview OK (cream/amber, covers, Drinks). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still CNAME `ghs.google.com` / Blogger GSE. Hosted Cusdis still **521** (abandoned); comments email-only pending Web3Forms secret (not set). Box browser still **no** usable Squarespace/Google session (no Chrome Default cookie profile). GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green. `gh` CLI still authenticated as DKrics.
+Keeper check `2026-09-11 16:55 CDT`: github.io Astro preview OK (cream/amber, covers, Drinks). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still CNAME `ghs.google.com` / Blogger GSE. Hosted Cusdis still **521** (abandoned); comments email-only pending Web3Forms secret (not set — `gh secret list` empty for that name). Box browser chrome-profile has only anonymous/marketing Squarespace cookies — **no** usable login. GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green. `gh` CLI still authenticated as DKrics.
 
 ## Preview (ready now)
 
@@ -28,7 +28,7 @@ Until then: comments heading + disabled form + X handle only. Notes land in the 
 
 ## 2) Squarespace DNS cutover (do this when ready)
 
-Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still `ghs.google.com`. Keep Blogger until HTTPS on the new site is confirmed. Box browser still has **no** Squarespace/Google login — cannot flip DNS from here.
+Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still `ghs.google.com`. Keep Blogger until HTTPS on the new site is confirmed. Box browser still has **no** usable Squarespace/Google login (anonymous cookies only) — cannot flip DNS from here.
 
 1. Squarespace → Domains → `oldfashioneddoctor.com` → **DNS settings**
 2. Apex **A** records (remove/replace Blogger A's):
@@ -55,7 +55,7 @@ Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still `ghs.google
 - All 24 heroes/covers filled; build green
 - `STATUS.md` + this file updated for morning
 - `main` sync from `site` prepared (no force)
-- Keeper `2026-09-11 15:57 CDT`: preview re-verified; DNS still blocked on Homey/login; comments waiting on Web3Forms key; no box Squarespace/Google session
+- Keeper `2026-09-11 16:55 CDT`: preview re-verified; DNS still blocked on Homey/login; comments waiting on Web3Forms key; box Squarespace cookies anonymous only
 
 ## Git / main
 
