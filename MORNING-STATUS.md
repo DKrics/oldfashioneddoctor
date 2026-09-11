@@ -2,7 +2,7 @@
 
 Quiet overnight is over (after 7:30 AM CDT). Preview is live; **you** own DNS + the comments inbox key. Agents did **not** change live DNS.
 
-Keeper check `2026-09-11 13:52 CDT`: github.io Astro preview OK (cream/amber, covers, Drinks). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still CNAME `ghs.google.com` / Blogger GSE. Hosted Cusdis dropped (was **521**); comments now email-only pending Web3Forms. Box browser still **no** usable Squarespace/Google session (stale/absent auth; no Google SID/HSID; account.squarespace.com → login OAuth; domains.squarespace.com is public buy page). GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green. `gh` CLI still authenticated as DKrics.
+Keeper check `2026-09-11 15:57 CDT`: github.io Astro preview OK (cream/amber, covers, Drinks). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still CNAME `ghs.google.com` / Blogger GSE. Hosted Cusdis still **521** (abandoned); comments email-only pending Web3Forms secret (not set). Box browser still **no** usable Squarespace/Google session (no Chrome Default cookie profile). GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green. `gh` CLI still authenticated as DKrics.
 
 ## Preview (ready now)
 
@@ -55,7 +55,7 @@ Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still `ghs.google
 - All 24 heroes/covers filled; build green
 - `STATUS.md` + this file updated for morning
 - `main` sync from `site` prepared (no force)
-- Keeper `2026-09-11 13:52 CDT`: preview re-verified; DNS still blocked on Homey/login; comments waiting on Web3Forms key
+- Keeper `2026-09-11 15:57 CDT`: preview re-verified; DNS still blocked on Homey/login; comments waiting on Web3Forms key; no box Squarespace/Google session
 
 ## Git / main
 
