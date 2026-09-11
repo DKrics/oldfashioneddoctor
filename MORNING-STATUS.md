@@ -2,17 +2,17 @@
 
 Quiet overnight. Preview is live; **you** own DNS + Cusdis. Agents did **not** change live DNS.
 
-Keeper check `2026-09-11 00:52 CDT`: github.io Astro preview OK (cream/amber, covers, Drinks). Apex still Blogger. Cusdis still **521**. Box browser has **no** Squarespace/Google session (login walls only).
+Keeper check `2026-09-11 01:56 CDT`: github.io Astro preview OK (cream/amber, covers, Drinks). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger/GSE. Cusdis still **521**. Box browser still **no** Squarespace/Google session (login walls only). GitHub Pages `cname` still null (correct for preview mode).
 
 ## Preview (ready now)
 
 https://dkrics.github.io/oldfashioneddoctor/
 
-Hard-refresh. Astro, covers, Drinks, cream/amber. `npm run build` green. Branch `site` deploys via Actions.
+Hard-refresh. Astro, covers, Drinks, cream/amber. `npm run build` green. Branch `site` deploys via Actions (latest push green).
 
 ## 1) Cusdis App ID (comments)
 
-Host was **521** overnight (still down at `2026-09-11 00:52 CDT`) — retry when [cusdis.com](https://cusdis.com) loads.
+Host was **521** overnight (still down at `2026-09-11 01:56 CDT`) — retry when [cusdis.com](https://cusdis.com) loads.
 
 1. Open https://cusdis.com → **Start for free**
 2. Sign in with your private Google/GitHub (dashboard stays off the public journal)
@@ -32,7 +32,7 @@ Until then: comments heading + disabled form + X handle only.
 Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still Blogger/GSE. Keep Blogger until HTTPS on the new site is confirmed. Overnight box browser had **no** Squarespace/Google login — cannot flip DNS from here.
 
 1. Squarespace → Domains → `oldfashioneddoctor.com` → **DNS settings**
-2. Apex **A** records (remove/replace Blogger A’s):
+2. Apex **A** records (remove/replace Blogger A's):
    - `185.199.108.153`
    - `185.199.109.153`
    - `185.199.110.153`
@@ -56,7 +56,7 @@ Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still Blogger/GSE
 - All 24 heroes/covers filled; build green
 - `STATUS.md` + this file updated for morning
 - `main` sync from `site` prepared (no force)
-- Keeper `2026-09-11 00:52 CDT`: preview re-verified; DNS + Cusdis still blocked on Homey/login/host
+- Keeper `2026-09-11 01:56 CDT`: preview re-verified; DNS + Cusdis still blocked on Homey/login/host
 
 ## Git / main
 
