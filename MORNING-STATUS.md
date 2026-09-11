@@ -27,3 +27,9 @@ Earlier you saw Blogger because GitHub Pages had a custom-domain CNAME and redir
 ## Color scheme + graphics note
 
 The redesign you previewed earlier (cream paper, dark brown chrome, amber accents, stethoscope hero, per-post covers) is what’s on the Astro preview link above. It was never on Blogger — only looked “missing” while the link redirected to Blogger.
+
+## Keeper check (2026-09-11 04:57 UTC)
+- Preview still Astro with covers/Drinks.
+- Apex DNS still Blogger (216.239.*).
+- Cusdis: host responding with errors (not signup-ready).
+- No Homey ping (quiet until 7:30 America/Chicago).
