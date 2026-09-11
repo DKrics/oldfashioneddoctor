@@ -1,8 +1,8 @@
 # Morning brief — Old Fashioned Doctor
 
-Quiet overnight. Preview is live; **you** own DNS + Cusdis. Agents did **not** change live DNS.
+Quiet overnight is over (after 7:30 AM CDT). Preview is live; **you** own DNS + Cusdis. Agents did **not** change live DNS.
 
-Keeper check `2026-09-11 06:52 CDT`: github.io Astro preview OK (cream/amber, covers, Drinks). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger/GSE. Cusdis still **521**. Box browser still **no** Squarespace/Google session (login walls — Sign in tabs for Squarespace/Google/GitHub; Google homepage shows Sign in). GitHub Pages `cname` still null (correct for preview mode).
+Keeper check `2026-09-11 08:19 CDT`: github.io Astro preview OK (cream/amber, covers, Drinks). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger/GSE. Cusdis still **521**. Box browser still **no** Squarespace/Google session (login walls — Squarespace/Google/GitHub sign-in tabs open; GitHub device login form). GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green.
 
 ## Preview (ready now)
 
@@ -12,7 +12,7 @@ Hard-refresh. Astro, covers, Drinks, cream/amber. `npm run build` green. Branch 
 
 ## 1) Cusdis App ID (comments)
 
-Host was **521** overnight (still down at `2026-09-11 06:52 CDT`) — retry when [cusdis.com](https://cusdis.com) loads.
+Host was **521** overnight (still down at `2026-09-11 08:19 CDT`) — retry when [cusdis.com](https://cusdis.com) loads.
 
 1. Open https://cusdis.com → **Start for free**
 2. Sign in with your private Google/GitHub (dashboard stays off the public journal)
@@ -29,7 +29,7 @@ Until then: comments heading + disabled form + X handle only.
 
 ## 2) Squarespace DNS cutover (do this when ready)
 
-Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still Blogger/GSE. Keep Blogger until HTTPS on the new site is confirmed. Overnight box browser had **no** Squarespace/Google login — cannot flip DNS from here.
+Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still Blogger/GSE. Keep Blogger until HTTPS on the new site is confirmed. Box browser still has **no** Squarespace/Google login — cannot flip DNS from here.
 
 1. Squarespace → Domains → `oldfashioneddoctor.com` → **DNS settings**
 2. Apex **A** records (remove/replace Blogger A's):
@@ -51,15 +51,15 @@ Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still Blogger/GSE
 - Import old Blogger comments
 - Invent new posts
 
-## Done overnight
+## Done overnight / morning
 
 - All 24 heroes/covers filled; build green
 - `STATUS.md` + this file updated for morning
 - `main` sync from `site` prepared (no force)
-- Keeper `2026-09-11 06:52 CDT`: preview re-verified; DNS + Cusdis still blocked on Homey/login/host
+- Keeper `2026-09-11 08:19 CDT`: preview re-verified; DNS + Cusdis still blocked on Homey/login/host
 
 ## Git / main
 
 - Deploy source of truth: branch **`site`** (Actions on push). Already pushed; green.
 - `origin/main` is a divergent older/simpler rebuild — **cannot** update without force-push.
-- Agents will **not** force-push. Decide at morning: keep `site`, or authorize replacing `main`.
+- Agents will **not** force-push. Decide when ready: keep `site`, or authorize replacing `main`.
