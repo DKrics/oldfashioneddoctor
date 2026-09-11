@@ -54,3 +54,9 @@ Apex still points at Blogger (`216.239.*`). Keep Blogger until HTTPS on the new 
 - All 24 heroes/covers filled; build green
 - `STATUS.md` + this file updated for morning
 - `main` sync from `site` prepared (no force)
+
+## Git / main
+
+- Deploy source of truth: branch **`site`** (Actions on push). Already pushed; green.
+- `origin/main` is a divergent older/simpler rebuild — **cannot** update without force-push.
+- Agents will **not** force-push. Decide at morning: keep `site`, or authorize replacing `main`.

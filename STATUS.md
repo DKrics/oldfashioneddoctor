@@ -54,3 +54,7 @@ public/images/covers/good-doctors.jpg
 public/images/covers/medicare-plan.jpg
 public/images/og-default.jpg
 ```
+
+## Note on `main` (2026-09-11 overnight)
+
+`origin/main` is a **divergent** simpler static rebuild (unrelated history from `site`). A normal push of Astro `site` → `main` is **rejected without force**. Deploy stays on **`site`** (Actions). Homey: either keep `site` as the source of truth, or explicitly authorize replacing `main` (force/orphan) — agents will not force-push.
