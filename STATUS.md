@@ -2,7 +2,7 @@
 
 Overnight (quiet): site work is **done** on branch `site`. Essay prose untouched. All **24** posts remain. Blogger comments **not** imported.
 
-Keeper `2026-09-11 12:23 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. `www` → `ghs.google.com`. Cusdis.com HTTP **521**. No Squarespace/Google session on the box browser (`SS_SESSION_ID` empty; no Google SID/HSID; account.squarespace.com → login OAuth). GitHub Pages `cname` null (preview mode). `gh` CLI authenticated as DKrics.
+Keeper `2026-09-11 12:51 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. `www` → `ghs.google.com`. Cusdis.com HTTP **521**. No usable Squarespace/Google session on the box browser (stale/absent auth; no Google SID/HSID; account.squarespace.com → login OAuth). GitHub Pages `cname` null (preview mode). `gh` CLI authenticated as DKrics.
 
 `npm run build` **green** (Astro + Pagefind indexed 24 pages).
 
@@ -35,7 +35,7 @@ Repo is intentionally on **github.io preview mode** until you flip Squarespace D
 ## Blocked on Homey (no live DNS changes from agents)
 
 1. **Squarespace DNS** → GitHub Pages (apex still Blogger `216.239.32/34/36/38.21`)
-2. **Cusdis** App ID secret (hosted cusdis.com still HTTP **521** as of `2026-09-11 12:23 CDT`)
+2. **Cusdis** App ID secret (hosted cusdis.com still HTTP **521** as of `2026-09-11 12:51 CDT`)
 3. Box browser login for Squarespace/Google (still at sign-in walls)
 
 Exact click-paths: see `MORNING-STATUS.md`.
