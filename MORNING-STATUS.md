@@ -2,7 +2,7 @@
 
 Quiet overnight. Preview is live; **you** own DNS + Cusdis. Agents did **not** change live DNS.
 
-Keeper check `2026-09-11 01:56 CDT`: github.io Astro preview OK (cream/amber, covers, Drinks). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger/GSE. Cusdis still **521**. Box browser still **no** Squarespace/Google session (login walls only). GitHub Pages `cname` still null (correct for preview mode).
+Keeper check `2026-09-11 02:55 CDT`: github.io Astro preview OK (cream/amber, covers, Drinks). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger/GSE. Cusdis still **521**. Box browser still **no** Squarespace/Google session (login walls only). GitHub Pages `cname` still null (correct for preview mode).
 
 ## Preview (ready now)
 
@@ -12,7 +12,7 @@ Hard-refresh. Astro, covers, Drinks, cream/amber. `npm run build` green. Branch 
 
 ## 1) Cusdis App ID (comments)
 
-Host was **521** overnight (still down at `2026-09-11 01:56 CDT`) — retry when [cusdis.com](https://cusdis.com) loads.
+Host was **521** overnight (still down at `2026-09-11 02:55 CDT`) — retry when [cusdis.com](https://cusdis.com) loads.
 
 1. Open https://cusdis.com → **Start for free**
 2. Sign in with your private Google/GitHub (dashboard stays off the public journal)
@@ -56,7 +56,7 @@ Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still Blogger/GSE
 - All 24 heroes/covers filled; build green
 - `STATUS.md` + this file updated for morning
 - `main` sync from `site` prepared (no force)
-- Keeper `2026-09-11 01:56 CDT`: preview re-verified; DNS + Cusdis still blocked on Homey/login/host
+- Keeper `2026-09-11 02:55 CDT`: preview re-verified; DNS + Cusdis still blocked on Homey/login/host
 
 ## Git / main
 
