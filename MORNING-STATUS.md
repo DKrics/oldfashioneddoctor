@@ -1,33 +1,46 @@
-# Morning status — Old Fashioned Doctor cutover (2026-09-11 night)
+# Morning status — Old Fashioned Doctor cutover (updated ~4:41 AM UTC)
 
 You went to sleep asking me to finish as much as possible autonomously.
 
-## Done
+## Done overnight
 
 1. **Astro site polished** — all 24 posts, covers, SEO, X-only feedback, moderated comments UI (no Blogger spam imported).
-2. **Committed + pushed** to branch `site` on `DKrics/oldfashioneddoctor` (left old simpler HTML on `main` alone).
-3. **GitHub Pages** now builds from Actions on `site`. Latest deploy: **green**.
+2. **Pushed** to branch `site` on `DKrics/oldfashioneddoctor` (left the older simpler HTML alone on `main`).
+3. **GitHub Pages Actions** deploy from `site` — **green**.
 4. **Preview live:** https://dkrics.github.io/oldfashioneddoctor/  
-   (Should show Drinks nav, cover images, new layout — not Blogger.)
-5. **Custom domain set in GitHub Pages:** `oldfashioneddoctor.com` (HTTPS will enable after DNS verifies).
+   (Drinks nav, cover images, new layout — not Blogger.)
+5. **Custom domain configured in GitHub Pages:** `oldfashioneddoctor.com` (HTTPS waits on DNS).
 
-## In progress / overnight
+## Blocked — needs you when you wake (~2 minutes)
 
-- **Squarespace DNS cutover** from Blogger (Google A records `216.239.*`) → GitHub Pages A records (`185.199.108–111.153`) + `www` CNAME → `dkrics.github.io`. Browser work started while you slept.
+**Squarespace DNS cutover did not complete.** The box browser had no logged-in Squarespace/Google session; Google sign-in asked for email/phone. No DNS records were changed.
 
-## Still needs you (can't finish while Cusdis host is down)
+Current public DNS still Blogger:
+- Apex A: `216.239.32.21`, `.34.21`, `.36.21`, `.38.21`
+- www → Google (`ghs.google.com`)
 
-- **Cusdis** (`cusdis.com`) still returns HTTP 521. Comments form is in the site but stays disabled until you create a project and set GitHub Actions secret `PUBLIC_CUSDIS_APP_ID` (steps in `STATUS.md`). Then re-run the Deploy workflow.
+### What to set in Squarespace → Domains → oldfashioneddoctor.com → DNS
 
-## When you wake
+1. Remove/replace apex **A** records that point at `216.239.*` with these four GitHub Pages IPs:
+   - `185.199.108.153`
+   - `185.199.109.153`
+   - `185.199.110.153`
+   - `185.199.111.153`
+2. Set **www** **CNAME** → `dkrics.github.io`
+3. Keep MX/TXT/email records untouched.
+4. After DNS propagates, GitHub Pages → enable HTTPS for `oldfashioneddoctor.com` (cname is already set).
+5. Then remove the custom domain from Blogger so it stops claiming the domain.
 
-1. Open https://dkrics.github.io/oldfashioneddoctor/ — confirm it looks right.
-2. Check https://oldfashioneddoctor.com — if DNS propagated, it should be the new site (may take minutes–hours; HTTPS may lag).
-3. If DNS didn't flip, open Squarespace Domains → DNS and set the A/CNAME records listed in `STATUS.md`.
-4. When Cusdis is up: create project + secret, redeploy.
-5. After HTTPS is green on the custom domain, retire Blogger custom domain mapping.
+Login wall screenshot (overnight): `/workspace/ofd-screenshots/07-squarespace-login-wall.png`
 
-## Do not
+## Also still open
 
-- Force-push `main` (we deliberately used `site`).
-- Import `/workspace/ofd-archive/comments.md` (spam).
+- **Cusdis** (`cusdis.com`) still HTTP 521. Comments UI is in the site but disabled until you create a project and set Actions secret `PUBLIC_CUSDIS_APP_ID` (see `STATUS.md`), then re-run Deploy.
+
+## Quick wake checklist
+
+1. https://dkrics.github.io/oldfashioneddoctor/ — confirm look.
+2. Squarespace DNS flip (above).
+3. Wait for https://oldfashioneddoctor.com to show the new site + HTTPS.
+4. Cusdis secret when their host is back.
+5. Retire Blogger custom domain.
