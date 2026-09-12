@@ -2,7 +2,7 @@
 
 Quiet overnight is over (after 7:30 AM CDT). Preview is live; **you** own DNS + the comments inbox key. Agents did **not** change live DNS.
 
-Keeper check `2026-09-11 20:57 CDT`: github.io Astro preview OK (cream/amber, covers, Drinks). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger GSE (`ghs`). Hosted Cusdis still **521** (abandoned); comments email-only pending Web3Forms secret (not set — `gh secret list` empty). Box browser chrome-profile has only anonymous/marketing Squarespace cookies — **no** usable login (`SS_SESSION_ID` empty / ANONYMOUS_ID only). GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green. `gh` CLI still authenticated as DKrics. No material change vs prior keeper — Homey still owns DNS + Web3Forms key.
+Keeper check `2026-09-11 21:50 CDT`: github.io Astro preview OK (cream/amber, covers, Drinks). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger GSE (`ghs`). Hosted Cusdis still **521** (abandoned); comments email-only pending Web3Forms secret (not set — `gh secret list` empty). Box browser chrome-profile has only anonymous/marketing Squarespace cookies — **no** usable login (`SS_SESSION_ID` empty / ANONYMOUS_ID only). GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green. `gh` CLI still authenticated as DKrics. No material change vs prior keeper — Homey still owns DNS + Web3Forms key.
 
 ## Preview (ready now)
 
