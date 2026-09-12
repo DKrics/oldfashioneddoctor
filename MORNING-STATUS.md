@@ -55,7 +55,7 @@ Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still `ghs.google
 - All 24 heroes/covers filled; build green
 - `STATUS.md` + this file updated for morning
 - `main` sync from `site` prepared (no force)
-- Keeper `2026-09-11 20:57 CDT`: preview re-verified; DNS still blocked on Homey/login; comments waiting on Web3Forms key; box Squarespace cookies anonymous only; no WakeParent (no material change)
+- Keeper `2026-09-11 21:50 CDT`: preview re-verified; DNS still blocked on Homey/login; comments waiting on Web3Forms key; box Squarespace cookies anonymous only; no WakeParent (no material change)
 
 ## Git / main
 
