@@ -2,7 +2,7 @@
 
 Quiet overnight is over (after 7:30 AM CDT). Preview is live; **you** own DNS + the comments inbox key. Agents did **not** change live DNS.
 
-Keeper check `2026-09-12 21:50 CDT`: github.io Astro preview OK (cream/amber `#f4ead8`/`#d9c48a`, covers, Drinks `/drinks/` 200). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger GSE. Hosted Cusdis still **521** (abandoned); comments email-only pending Web3Forms secret (not set — `gh secret list` empty). Box browser chrome-profile has only anonymous/marketing Squarespace cookies — **no** usable login (`ANONYMOUS_ID` present; no Google SID/HSID account cookies). GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green. `gh` CLI still authenticated as DKrics. No material change vs prior keeper — Homey still owns DNS + Web3Forms key. Local ~2026-09-12 21:50 CDT — stay quiet (no WakeParent; no material change).
+Keeper check `2026-09-12 22:52 CDT`: github.io Astro preview OK (cream/amber `#f4ead8`/`#d9c48a`, covers, Drinks `/drinks/` 200). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger GSE. Hosted Cusdis still **521** (abandoned); comments email-only pending Web3Forms secret (not set — `gh secret list` empty). Box browser chrome-profile has only anonymous/marketing Squarespace cookies — **no** usable login (`ANONYMOUS_ID` present; no Google SID/HSID account cookies). GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green. `gh` CLI still authenticated as DKrics. No material change vs prior keeper — Homey still owns DNS + Web3Forms key. Local ~2026-09-12 22:52 CDT — stay quiet (no WakeParent; no material change).
 
 
 
@@ -59,7 +59,7 @@ Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still `ghs.google
 - All 24 heroes/covers filled; build green
 - `STATUS.md` + this file updated for morning
 - `main` sync from `site` prepared (no force)
-- Keeper `2026-09-12 21:50 CDT`: preview re-verified; DNS still blocked on Homey/login; comments waiting on Web3Forms key; box Squarespace cookies anonymous only; no WakeParent (no material change)
+- Keeper `2026-09-12 22:52 CDT`: preview re-verified; DNS still blocked on Homey/login; comments waiting on Web3Forms key; box Squarespace cookies anonymous only; no WakeParent (no material change)
 
 ## Git / main
 
