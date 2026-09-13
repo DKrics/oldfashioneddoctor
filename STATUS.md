@@ -2,8 +2,7 @@
 
 Overnight (quiet): site work is **done** on branch `site`. Essay prose untouched. All **24** posts remain. Blogger comments **not** imported.
 
-Keeper `2026-09-13 12:57 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. `www` → Blogger GSE. Hosted Cusdis still HTTP **521** (abandoned). Comments email form still disabled pending `PUBLIC_WEB3FORMS_ACCESS_KEY` (`gh secret list` empty, total_count 0). Box chrome-profile has only anonymous Squarespace cookies — no usable login. GitHub Pages `cname` null (preview mode). Latest Actions on `site` green. `gh` CLI authenticated as DKrics. No material change — stay quiet (after 7:30 CDT).
-
+Keeper `2026-09-13 13:57 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. `www` → Blogger GSE. Hosted Cusdis still HTTP **521** (abandoned). Comments email form **live** — `PUBLIC_WEB3FORMS_ACCESS_KEY` set in Actions and present on post pages. Box chrome-profile has only anonymous Squarespace cookies — no usable login. GitHub Pages `cname` null (preview mode). Latest Actions on `site` green. `gh` CLI authenticated as DKrics. DNS still Homey-owned — stay quiet (after 7:30 CDT).
 
 `npm run build` **green** (Astro + Pagefind indexed 24 pages).
 
@@ -11,7 +10,7 @@ Keeper `2026-09-13 12:57 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serv
 
 **https://dkrics.github.io/oldfashioneddoctor/**
 
-Hard-refresh. Cream/amber Astro site with `Drinks` nav and per-post covers — **not** Blogger.
+Hard-refresh. Cream/amber Astro site with `Drinks` nav, per-post covers, and enabled comments form — **not** Blogger.
 
 Repo is intentionally on **github.io preview mode** until you flip Squarespace DNS:
 - `astro.config.mjs`: `site: 'https://dkrics.github.io'`, `base: '/oldfashioneddoctor/'`
@@ -24,7 +23,7 @@ Repo is intentionally on **github.io preview mode** until you flip Squarespace D
 - SEO: titles, descriptions, canonicals, OG/Twitter, sitemap, robots, RSS, JSON-LD `Blog` / `BlogPosting`, author **Old Fashioned Doctor** only
 - Drinks rename (`/cocktails/` → `/drinks/`), Pagefind search, Blogger path redirects under `public/2017`, `public/2018`, `public/p`
 - Feedback via X only: [@OldFashionedDr](https://x.com/OldFashionedDr)
-- Comments UI (`Comments.astro` + Web3Forms email POST): Name / Email / Comment required. Email never published. No on-page thread — notes go to the private inbox for review. Disabled until `PUBLIC_WEB3FORMS_ACCESS_KEY` is set. X remains the public alternate.
+- Comments UI (`Comments.astro` + Web3Forms email POST): Name / Email / Comment required. Email never published. No on-page thread — notes go to the private inbox for review. **Enabled** with `PUBLIC_WEB3FORMS_ACCESS_KEY`. X remains the public alternate.
 
 ## Git
 
@@ -36,8 +35,7 @@ Repo is intentionally on **github.io preview mode** until you flip Squarespace D
 ## Blocked on Homey (no live DNS changes from agents)
 
 1. **Squarespace DNS** → GitHub Pages (apex still Blogger `216.239.32/34/36/38.21`)
-2. **Web3Forms** access key secret (`PUBLIC_WEB3FORMS_ACCESS_KEY`) so the comments form can email notes
-3. Box browser login for Squarespace/Google (anonymous cookies only; still at sign-in walls)
+2. Box browser login for Squarespace/Google (anonymous cookies only; still at sign-in walls)
 
 Exact click-paths: see `MORNING-STATUS.md`.
 

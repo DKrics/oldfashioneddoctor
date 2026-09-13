@@ -1,36 +1,22 @@
 # Morning brief — Old Fashioned Doctor
 
-Quiet overnight is over (after 7:30 AM CDT). Preview is live; **you** own DNS + the comments inbox key. Agents did **not** change live DNS.
+Quiet overnight is over (after 7:30 AM CDT). Preview is live; **you** still own Squarespace DNS. Agents did **not** change live DNS.
 
-Keeper check `2026-09-13 12:57 CDT`: github.io Astro preview OK (cream/amber `#f4ead8`/`#d9c48a`/`#ebe3d3`, covers, Drinks `/drinks/` 200). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger GSE. Hosted Cusdis still **521** (abandoned); comments email-only pending Web3Forms secret (not set — `gh secret list` empty / total_count 0). Box browser chrome-profile has only anonymous/marketing Squarespace cookies — **no** usable login (`ANONYMOUS_ID` present; no Google SID/HSID account cookies). GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green. `gh` CLI still authenticated as DKrics. No material change vs prior keeper — Homey still owns DNS + Web3Forms key. Local ~2026-09-13 12:57 CDT (after 7:30) — stay quiet (no WakeParent; no material change).
-
-
-
-
+Keeper check `2026-09-13 13:57 CDT`: github.io Astro preview OK (cream/amber `#f4ead8`/`#d9c48a`/`#ebe3d3` / CSS `--cream`/`--amber`, covers, Drinks `/drinks/` 200). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger GSE (`ghs.google.com`). Hosted Cusdis still **521** (abandoned). Comments email form **live** on preview — `PUBLIC_WEB3FORMS_ACCESS_KEY` present in Actions secrets (set 2026-09-13 ~13:03 CDT) and baked into post pages (`api.web3forms.com`). Box browser chrome-profile still has only anonymous/marketing Squarespace cookies (`ANONYMOUS_ID`; no Google SID/HSID) — recent history stuck at Google sign-in for Squarespace OAuth. GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green (`0ffdacf` About rewrite). `gh` CLI authenticated as DKrics. Material vs prior written status: Web3Forms unblocked (Homey already did that). DNS cutover still blocked on Homey. Local ~2026-09-13 13:57 CDT (after 7:30) — stay quiet (no WakeParent; DNS ask unchanged).
 
 ## Preview (ready now)
 
 https://dkrics.github.io/oldfashioneddoctor/
 
-Hard-refresh. Astro, covers, Drinks, cream/amber. `npm run build` green. Branch `site` deploys via Actions (latest push green).
+Hard-refresh. Astro, covers, Drinks, cream/amber, comments form enabled. `npm run build` green. Branch `site` deploys via Actions (latest push green).
 
-## 1) Web3Forms access key (comments → private inbox)
+## 1) Web3Forms access key — DONE
 
-Hosted Cusdis (`cusdis.com`) was HTTP **521** and is no longer used. Comments now email a note for review. Nothing appears on the page. The private inbox address is **not** published on the site.
+Hosted Cusdis (`cusdis.com`) was HTTP **521** and is no longer used. Secret `PUBLIC_WEB3FORMS_ACCESS_KEY` is set; redeploys include it. Comments email a note for review. Nothing appears on the page. The private inbox address is **not** published on the site. Do **not** import Blogger/Disqus comments.
 
-1. Open https://web3forms.com → **Create Access Key**
-2. Enter the private inbox email (not published on the site)
-3. Confirm via the email they send
-4. Copy **Access Key**
-5. GitHub → repo `DKrics/oldfashioneddoctor` → **Settings → Secrets and variables → Actions → New repository secret**
-   - Name: `PUBLIC_WEB3FORMS_ACCESS_KEY`
-   - Value: that key
-6. **Actions → Deploy to GitHub Pages → Run workflow** (branch `site`)
-7. Optional: delete unused secret `PUBLIC_CUSDIS_APP_ID` (and `PUBLIC_CUSDIS_HOST` if present)
+Optional cleanup: delete unused secret `PUBLIC_CUSDIS_APP_ID` (and `PUBLIC_CUSDIS_HOST` if present).
 
-Until then: comments heading + disabled form + X handle only. Notes land in the inbox; do **not** import Blogger/Disqus comments.
-
-## 2) Squarespace DNS cutover (do this when ready)
+## 2) Squarespace DNS cutover (still blocked — Homey)
 
 Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still `ghs.google.com`. Keep Blogger until HTTPS on the new site is confirmed. Box browser still has **no** usable Squarespace/Google login (anonymous cookies only) — cannot flip DNS from here.
 
@@ -59,7 +45,8 @@ Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still `ghs.google
 - All 24 heroes/covers filled; build green
 - `STATUS.md` + this file updated for morning
 - `main` sync from `site` prepared (no force)
-- Keeper `2026-09-13 12:57 CDT`: preview re-verified; DNS still blocked on Homey/login; comments waiting on Web3Forms key; box Squarespace cookies anonymous only; no WakeParent (no material change; after 7:30 CDT)
+- Web3Forms secret added + comments form live on github.io preview
+- Keeper `2026-09-13 13:57 CDT`: preview re-verified; comments live; DNS still blocked on Homey/login; box Squarespace cookies anonymous only; no WakeParent (DNS ask unchanged; after 7:30 CDT)
 
 ## Git / main
 
