@@ -2,7 +2,7 @@
 
 Quiet overnight is over (after 7:30 AM CDT). Preview is live; **you** still own Squarespace DNS. Agents did **not** change live DNS.
 
-Keeper check `2026-09-13 15:51 CDT`: github.io Astro preview OK (cream/amber `#f4ead8`/`#d9c48a`/`#ebe3d3` / CSS `--cream`/`--amber`, covers, Drinks `/drinks/` 200). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger GSE (`ghs.google.com` / server GSE). Hosted Cusdis still **521** (abandoned). Comments email form **live** on preview — `PUBLIC_WEB3FORMS_ACCESS_KEY` present in Actions secrets and baked into post pages (`api.web3forms.com`). Box browser chrome-profile still has only anonymous/marketing Squarespace cookies (`ANONYMOUS_ID`; no Google SID/HSID) — cannot flip DNS from here. GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green (prior keeper status push `3e1b6fc`). `gh` CLI authenticated as DKrics. No material change vs 14:57 CDT. DNS cutover still blocked on Homey. Local ~2026-09-13 15:51 CDT (after 7:30) — stay quiet (no WakeParent; DNS ask unchanged).
+Keeper check `2026-09-13 16:58 CDT`: github.io Astro preview OK (cream/amber `#fbf7ef`/`#b45309`/`#ebe3d3` / CSS `--cream`/`--amber`, covers, Drinks `/drinks/` 200). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger GSE (`ghs.google.com` / server GSE). Hosted Cusdis still **521** (abandoned). Comments email form **live** on preview — `PUBLIC_WEB3FORMS_ACCESS_KEY` present in Actions secrets and baked into post pages (`api.web3forms.com`). Box browser chrome-profile still has only anonymous/marketing Squarespace cookies (`ANONYMOUS_ID`; no Google SID/HSID) — cannot flip DNS from here. GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green (prior keeper status push `22e256b`). `gh` CLI authenticated as DKrics. No material change vs 15:51 CDT. DNS cutover still blocked on Homey. Local ~2026-09-13 16:58 CDT (after 7:30) — stay quiet (no WakeParent; DNS ask unchanged).
 
 
 ## Preview (ready now)
@@ -50,6 +50,7 @@ Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still `ghs.google
 - Keeper `2026-09-13 13:57 CDT`: preview re-verified; comments live; DNS still blocked on Homey/login; box Squarespace cookies anonymous only; no WakeParent (DNS ask unchanged; after 7:30 CDT)
 - Keeper `2026-09-13 14:57 CDT`: preview re-verified; comments still live; DNS still blocked; box Squarespace still anonymous only; no WakeParent (no material change)
 - Keeper `2026-09-13 15:51 CDT`: preview re-verified; comments still live; DNS still blocked; box Squarespace still anonymous only; no WakeParent (no material change)
+- Keeper `2026-09-13 16:58 CDT`: preview re-verified; comments still live; DNS still blocked; box Squarespace still anonymous only; no WakeParent (no material change)
 
 ## Git / main
 
