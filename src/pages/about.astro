@@ -2,39 +2,32 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE, withBase } from '../lib/site';
 ---
-<BaseLayout title="About" description="The only blog dedicated to medicine and cocktails, written by a practicing family physician.">
+<BaseLayout title="About" description="A Midwestern family physician writing about medicine, life, and the occasional well-made drink.">
   <div class="wrap" style="max-width: 44rem">
     <p class="kicker" style="color: var(--amber)">The masthead</p>
     <h1 style="font-family: var(--serif-display); font-size: clamp(2rem,5vw,3.2rem); letter-spacing:-0.03em; margin: 0 0 0.8rem;">About</h1>
     <div class="prose" style="margin: 0; padding: 0; max-width: none">
       <p>
-        This is the only blog dedicated to medicine and cocktails. That is not a branding exercise.
-        It is simply what the work and the evenings look like.
+        I’m a Midwestern family physician — board-certified — who still believes medicine is
+        mostly about people. The work is to listen well, help when I can, and treat patients
+        like neighbors, not charts.
       </p>
       <p>
-        I am a practicing family physician. In clinic I write notes, argue with electronic records,
-        sit with patients, and try to practice good medicine in a system that often makes that harder
-        than it should be. After hours — and sometimes because of those hours — I think about bourbon,
-        rye, barrel-aging, ice, and the small ceremonies that make a drink worth having.
+        Away from clinic I try to stay curious: new places with family, ordinary days that turn
+        out better than expected, and the small fine things that make a week feel like a life.
+        Sometimes that is a quiet evening and a well-balanced cocktail. Not as an escape —
+        just as one more way to pay attention.
       </p>
       <p>
-        The pieces here are candid. Clinic life, insurance enrollment, waiting rooms, bad sazeracs,
-        a first trip down the Kentucky Bourbon Trail, a car that almost ran me over in my own garage.
-        I write as <strong>{SITE.author}</strong>. No hospital press office, no invented credentials.
-        If a story involves a patient, the details are handled the way they should be: enough to tell
-        the truth, not enough to point at a person.
+        I write here as <strong>{SITE.author}</strong>. The essays are candid and imperfect.
+        If a story touches a patient, the details stay general on purpose.
       </p>
       <p>
-        I started this journal in 2017 because the two subjects kept colliding — a bottle of Jameson
-        off a cabinet, a Medicare question in November, a barrel of Creole cocktail going slightly
-        wrong. They still do.
-      </p>
-      <p>
-        Essays have a comments box. Your email is required and is never published;
-        notes go to the journal for review and do not appear on the page. You can also write on X at
-        <a href={SITE.twitter} rel="me noopener">{SITE.twitterHandle}</a>.
-        Subscribe via <a href={withBase('rss.xml')}>RSS</a>.
-        There is no public email address and no contact form. Linking is welcome; republishing is not.
+        Comments need an email (never published) and go for review before anything appears.
+        You can also find me on X at
+        <a href={SITE.twitter} rel="me noopener">{SITE.twitterHandle}</a>,
+        or subscribe via <a href={withBase('rss.xml')}>RSS</a>.
+        Linking is welcome; republishing is not.
       </p>
       <p><em>{SITE.copyright}</em></p>
     </div>
