@@ -2,7 +2,7 @@
 
 Overnight (quiet): site work is **done** on branch `site`. Essay prose untouched. All **24** posts remain. Blogger comments **not** imported.
 
-Keeper `2026-09-13 03:50 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. `www` → Blogger GSE. Hosted Cusdis still HTTP **521** (abandoned). Comments email form still disabled pending `PUBLIC_WEB3FORMS_ACCESS_KEY` (`gh` secrets API 500 this run; prior runs empty). Box chrome-profile has only anonymous Squarespace cookies — no usable login. GitHub Pages `cname` null (preview mode). Latest Actions on `site` green. `gh` CLI authenticated as DKrics. No material change — stay quiet.
+Keeper `2026-09-13 04:55 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. `www` → Blogger GSE. Hosted Cusdis still HTTP **521** (abandoned). Comments email form still disabled pending `PUBLIC_WEB3FORMS_ACCESS_KEY` (`gh secret list` empty, total_count 0). Box chrome-profile has only anonymous Squarespace cookies — no usable login. GitHub Pages `cname` null (preview mode). Latest Actions on `site` green. `gh` CLI authenticated as DKrics. No material change — stay quiet.
 
 
 `npm run build` **green** (Astro + Pagefind indexed 24 pages).
