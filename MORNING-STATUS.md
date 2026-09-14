@@ -2,7 +2,7 @@
 
 Quiet overnight continues (before 7:30 AM CDT). Preview is live; **you** still own Squarespace DNS. Agents did **not** change live DNS.
 
-Keeper check `2026-09-14 05:55 CDT`: github.io Astro preview OK (cream/amber `#fbf7ef`/`#b45309`/`#ebe3d3` / CSS `--cream`/`--amber`, covers, Drinks `/drinks/` 200). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger GSE (`ghs.google.com`). Hosted Cusdis still **521** (abandoned). Comments email form **live** on preview — `PUBLIC_WEB3FORMS_ACCESS_KEY` present in Actions secrets. Box browser chrome-profile still has only anonymous/marketing Squarespace cookies (`ANONYMOUS_ID`; no Google SID/HSID) — cannot flip DNS from here. GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green (prior keeper status push). `gh` CLI authenticated as DKrics. No material change vs 05:06 CDT. DNS cutover still blocked on Homey. Local ~2026-09-14 05:55 CDT (before 7:30) — stay quiet (no WakeParent).
+Keeper check `2026-09-14 07:01 CDT`: github.io Astro preview OK (cream/amber `#fbf7ef`/`#b45309`/`#ebe3d3` / CSS `--cream`/`--amber`, covers, Drinks `/drinks/` 200). Apex still Blogger A `216.239.32/34/36/38.21`. `www` still Blogger GSE (`ghs.google.com`). Hosted Cusdis still **521** (abandoned). Comments email form **live** on preview — `PUBLIC_WEB3FORMS_ACCESS_KEY` present in Actions secrets. Box browser chrome-profile still has only anonymous/marketing Squarespace cookies (`ANONYMOUS_ID` / `SS_SESSION_ID`; no Google SID/HSID) — cannot flip DNS from here. GitHub Pages `cname` still null (correct for preview mode). Latest Actions deploy on `site` green (prior keeper status push). `gh` CLI authenticated as DKrics. No material change vs 05:55 CDT. DNS cutover still blocked on Homey. Local ~2026-09-14 07:01 CDT (before 7:30) — stay quiet (no WakeParent).
 
 
 ## Preview (ready now)
@@ -72,6 +72,8 @@ Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still `ghs.google
 - Keeper `2026-09-14 05:06 CDT`: preview re-verified; comments still live; DNS still blocked; box Squarespace still anonymous only; no WakeParent (no material change; before 7:30 CDT)
 
 - Keeper `2026-09-14 05:55 CDT`: preview re-verified; comments still live; DNS still blocked; box Squarespace still anonymous only; no WakeParent (no material change; before 7:30 CDT)
+
+- Keeper `2026-09-14 07:01 CDT`: preview re-verified; comments still live; DNS still blocked; box Squarespace still anonymous only; no WakeParent (no material change; before 7:30 CDT)
 
 ## Git / main
 
