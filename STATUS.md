@@ -2,7 +2,7 @@
 
 Overnight (quiet): site work is **done** on branch `site`. Essay prose untouched. All **24** posts remain. Blogger comments **not** imported.
 
-Keeper `2026-09-15 00:49 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. `www` → Blogger GSE. Hosted Cusdis still HTTP **521** (abandoned). Comments email form **live** — `PUBLIC_WEB3FORMS_ACCESS_KEY` set in Actions. Box chrome-profile has only anonymous Squarespace cookies — no usable login. GitHub Pages `cname` null (preview mode). Latest Actions on `site` green. `gh` CLI authenticated as DKrics. No material change vs 23:58 CDT. DNS still Homey-owned — stay quiet (before 7:30 CDT; no WakeParent).
+Keeper `2026-09-15 01:58 CDT`: https://dkrics.github.io/oldfashioneddoctor/ serves Astro (cream/amber, covers, Drinks). Apex `oldfashioneddoctor.com` still Blogger A records `216.239.*`. `www` → Blogger GSE. Hosted Cusdis still HTTP **521** (abandoned). Comments email form **live** — `PUBLIC_WEB3FORMS_ACCESS_KEY` set in Actions. Box chrome-profile has only anonymous Squarespace cookies — no usable login. GitHub Pages `cname` null (preview mode). Latest Actions on `site` green. `gh` CLI authenticated as DKrics. No material change vs 00:49 CDT. DNS still Homey-owned — stay quiet (before 7:30 CDT; no WakeParent).
 
 
 `npm run build` **green** (Astro + Pagefind indexed 24 pages).
