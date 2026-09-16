@@ -2,7 +2,7 @@
 
 Overnight (quiet): site work is **done** on branch `site`. Essay prose untouched. All **24** posts remain. Blogger comments **not** imported.
 
-Keeper `2026-09-15 21:52 CDT`: https://dkrics.github.io/oldfashioneddoctor/ still serves Astro (HTTP 200; cream/amber, covers, Drinks; `/drinks/` HTTP 200). Apex redirects 301 to `www`; apex final HTTP 200 and `www` HTTP 200 both remain Blogger/GSE over HTTPS. Cusdis remains HTTP **521**; comments email form remains enabled. GitHub Pages `cname` is null with HTTPS enforced; latest `site` Actions deploy is green. No usable Squarespace/Google session on the box (anonymous cookies; Google Sign in). No material change vs 20:53 CDT. DNS still Homey-owned — stay quiet (after 7:30 CDT; no WakeParent; no material change).
+Keeper `2026-09-15 22:50 CDT`: https://dkrics.github.io/oldfashioneddoctor/ still serves Astro (HTTP 200; cream/amber, covers, Drinks; `/drinks/` HTTP 200). Apex redirects 301 to `www`; apex final HTTP 200 and `www` HTTP 200 both remain Blogger/GSE over HTTPS. Cusdis remains HTTP **521**; comments email form remains enabled. GitHub Pages `cname` is null with HTTPS enforced; latest `site` Actions deploy is green. No usable Squarespace/Google session on the box (anonymous cookies; Google Sign in). No material change vs 21:52 CDT. DNS still Homey-owned — stay quiet (after 7:30 CDT; no WakeParent; no material change).
 
 
 `npm run build` **green** (Astro + Pagefind indexed 24 pages).
@@ -61,3 +61,5 @@ public/images/og-default.jpg
 Keeper `2026-09-15 20:00 CDT`: preview re-verified via curl HTTP 200 as Astro (cream/amber, covers, Drinks); `/drinks/` HTTP 200. Apex and `www` still Blogger; Cusdis HTTP 521; GitHub Pages `cname` null with HTTPS enforced; no usable Squarespace/Google session on box (anonymous-only). No material change vs 18:54 CDT; DNS still Homey-owned; no WakeParent.
 
 Keeper `2026-09-15 21:52 CDT`: preview re-verified via curl HTTP 200 as Astro (cream/amber, covers, Drinks); `/drinks/` HTTP 200. Apex and `www` still Blogger; Cusdis HTTP 521; GitHub Pages `cname` null with HTTPS enforced; no usable Squarespace/Google session on box (anonymous-only). No material change vs 20:53 CDT; DNS still Homey-owned; no WakeParent.
+
+Keeper `2026-09-15 22:50 CDT`: preview re-verified via curl HTTP 200 as Astro (cream/amber, covers, Drinks); `/drinks/` HTTP 200. Apex and `www` still Blogger; Cusdis HTTP 521; GitHub Pages `cname` null with HTTPS enforced; no usable Squarespace/Google session on box (anonymous-only). No material change vs 21:52 CDT; DNS still Homey-owned; no WakeParent.
