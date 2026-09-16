@@ -145,3 +145,5 @@ Apex still points at Blogger (`216.239.32/34/36/38.21`). `www` still `ghs.google
 - Keeper `2026-09-15 17:54 CDT`: preview re-verified; comments still live; DNS still blocked; box Squarespace still anonymous only; no WakeParent (no material change; after 7:30 CDT)
 
 - Keeper `2026-09-15 18:54 CDT`: preview re-verified; comments still live; DNS still blocked; box Squarespace still anonymous only; no WakeParent (no material change; after 7:30 CDT)
+
+- Keeper `2026-09-15 20:00 CDT`: preview re-verified via curl HTTP 200; Astro title/brand, cream/amber brand colors, covers, and Drinks nav present; `/drinks/` HTTP 200. Apex and `www` still serve Blogger (Blogger generator; `www` follows Blogger). Hosted Cusdis still HTTP 521. GitHub Pages API reports `cname: null`, HTTPS enforced, workflow build; `gh` authenticated. No usable Squarespace/Google session is available on the box (prior browser check remains anonymous-only); DNS remains Homey-owned. No material change vs 18:54 CDT; no WakeParent (after 7:30 CDT).

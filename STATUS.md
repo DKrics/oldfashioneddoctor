@@ -59,3 +59,5 @@ public/images/covers/good-doctors.jpg
 public/images/covers/medicare-plan.jpg
 public/images/og-default.jpg
 ```
+
+Keeper `2026-09-15 20:00 CDT`: preview re-verified via curl HTTP 200 as Astro (cream/amber, covers, Drinks); `/drinks/` HTTP 200. Apex and `www` still Blogger; Cusdis HTTP 521; GitHub Pages `cname` null with HTTPS enforced; no usable Squarespace/Google session on box (anonymous-only). No material change vs 18:54 CDT; DNS still Homey-owned; no WakeParent.
