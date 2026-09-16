@@ -2,7 +2,7 @@
 
 Overnight (quiet): site work is **done** on branch `site`. Essay prose untouched. All **24** posts remain. Blogger comments **not** imported.
 
-Keeper `2026-09-16 04:55 CDT`: https://dkrics.github.io/oldfashioneddoctor/ still serves Astro (HTTP 200; cream/amber, covers, Drinks; `/drinks/` HTTP 200). Apex redirects 301 to `www`; apex final HTTP 200 and `www` HTTP 200 both remain Blogger/GSE over HTTPS. Cusdis remains HTTP **521**; comments email form remains enabled. GitHub Pages `cname` is null with HTTPS enforced; latest `site` Actions deploy is green. No usable Squarespace/Google session on the box (login.squarespace.com `ANONYMOUS_ID`; Google cookies lack SID/HSID/SSID). No material change vs 03:55 CDT. DNS still Homey-owned — stay quiet (before 7:30 CDT; no WakeParent; no material change).
+Keeper `2026-09-16 05:59 CDT`: https://dkrics.github.io/oldfashioneddoctor/ still serves Astro (HTTP 200; cream/amber, covers, Drinks; `/drinks/` HTTP 200). Apex redirects 301 to `www`; apex final HTTP 200 and `www` HTTP 200 both remain Blogger/GSE over HTTPS. Cusdis remains HTTP **521**; comments email form remains enabled. GitHub Pages `cname` is null with HTTPS enforced; latest `site` Actions deploy is green. No usable Squarespace/Google session on the box (login.squarespace.com `ANONYMOUS_ID`; Google cookies lack SID/HSID/SSID). No material change vs 04:55 CDT. DNS still Homey-owned — stay quiet (before 7:30 CDT; no WakeParent; no material change).
 
 
 
