@@ -1053,3 +1053,4 @@ Keeper `2026-09-19 03:58 CDT`: preview re-verified via curl HTTP 200 as Astro (O
 - 2026-10-05 07:52 CT keeper: preview https://dkrics.github.io/oldfashioneddoctor/ OK (200, Astro, Drinks). Apex still Blogger Google A (216.239.x.21), www CNAME ghs.google.com, NS googledomains. cusdis.com 521. Blocked on Homey: DNS change in Squarespace/Google Domains. No material change vs 06:56.
 
 - 2026-10-05 09:01 CT keeper check: preview https://dkrics.github.io/oldfashioneddoctor/ 200 (Astro, Drinks OK). Apex still Blogger Google A (216.239.x.21), www CNAME ghs.google.com, NS googledomains. cusdis.com 521. BLOCKED on Homey: DNS change in Squarespace/Google Domains. No material change.
+- 2026-10-05 ~10:58 CT keeper check: Astro preview live at dkrics.github.io/oldfashioneddoctor (200, Drinks OK); apex still Blogger A 216.239.32/34/36/38.21; www CNAME ghs.google.com; cusdis.com 521. Still blocked on Homey DNS change in Squarespace/Google Domains. No material change.
