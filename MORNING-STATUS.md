@@ -1,4 +1,6 @@
-Last keeper check: 2026-10-04 ~20:51 CT — Astro preview OK at dkrics.github.io/oldfashioneddoctor; apex/www still Blogger (Google A records / ghs.google.com); cusdis.com still 521. Blocked on Homey: DNS change in Squarespace/Google Domains.
+Last keeper check: 2026-10-04 ~21:55 CT — Astro preview OK at dkrics.github.io/oldfashioneddoctor; apex/www still Blogger (Google A records / ghs.google.com); cusdis.com still 521. Blocked on Homey: DNS change in Squarespace/Google Domains.
+
+- Keeper `2026-10-04 21:55 CDT`: preview re-verified via curl HTTP 200 as Astro (astro markers, Drinks nav). Apex 301 to `www`, both still Blogger/GSE (apex A `216.239.32/34/36/38.21`; www CNAME `ghs.google.com`). Hosted `cusdis.com` still HTTP **521**. No Squarespace/Google Domains session available (no cookie probing). No material change vs 20:51 CDT; no WakeParent (unchanged blocker). Cutover still blocked on Homey DNS change (apex A → 185.199.108/109/110/111.153; www CNAME → dkrics.github.io).
 
 - Keeper `2026-10-04 19:56 CDT`: preview re-verified via curl HTTP 200 as Astro (astro markers, Drinks nav). Apex 301 to `www`, both still Blogger/GSE (apex A `216.239.32/34/36/38.21`; www CNAME `ghs.google.com`). Hosted `cusdis.com` still HTTP **521**. No Squarespace/Google Domains session available (no cookie probing). No material change vs 18:51 CDT; no WakeParent (unchanged blocker). Cutover still blocked on Homey DNS change (apex A → 185.199.108/109/110/111.153; www CNAME → dkrics.github.io).
 
