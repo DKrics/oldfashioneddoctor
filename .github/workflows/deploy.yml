@@ -3,6 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [site]
+    # Keeper commits these logs about once an hour. They do not change the
+    # site. Deploying them produced the failed-run emails when GitHub could
+    # not acquire a runner or returned an internal error on the deploy job.
+    paths-ignore:
+      - 'STATUS.md'
+      - 'MORNING-STATUS.md'
   workflow_dispatch:
 
 permissions:
