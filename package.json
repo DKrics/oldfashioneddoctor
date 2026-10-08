@@ -3,10 +3,13 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "description": "Old Fashioned Doctor — Medicine. Cocktails. Life.",
+  "description": "Old Fashioned Doctor \u2014 Medicine. Cocktails. Life.",
   "scripts": {
+    "predev": "node scripts/materialize-covers.mjs",
     "dev": "astro dev",
+    "prebuild": "node scripts/materialize-covers.mjs",
     "build": "astro build && pagefind --site dist",
+    "prepreview": "node scripts/materialize-covers.mjs",
     "preview": "astro preview"
   },
   "dependencies": {
