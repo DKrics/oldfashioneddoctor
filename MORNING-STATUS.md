@@ -12,3 +12,5 @@ Blocked (Homey action needed):
   After that, keeper restores public/CNAME + astro site/base and enables Pages custom domain HTTPS.
   Box browser: no SID/HSID/SSID (or equivalent) for Google/Squarespace — cannot change DNS from here.
 - Comments: cusdis.com returns 521 (down), so PUBLIC_CUSDIS_APP_ID not set yet; Web3Forms remains fallback.
+
+- 2026-10-09 03:00 CT: preview 200 OK (Drinks, no Blogger); apex still Blogger A, www CNAME ghs.google.com; cusdis 521. Blocked on Homey DNS change.
