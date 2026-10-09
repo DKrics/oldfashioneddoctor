@@ -14,3 +14,5 @@ Blocked (Homey action needed):
 - Comments: cusdis.com returns 521 (down), so PUBLIC_CUSDIS_APP_ID not set yet; Web3Forms remains fallback.
 
 - 2026-10-09 03:00 CT: preview 200 OK (Drinks, no Blogger); apex still Blogger A, www CNAME ghs.google.com; cusdis 521. Blocked on Homey DNS change.
+
+- 2026-10-09 03:54 CT: preview 200 Drinks OK; apex still Blogger A, www ghs.google.com; cusdis 521. Blocked on Homey DNS change.
