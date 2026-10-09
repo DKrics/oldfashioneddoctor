@@ -1,4 +1,5 @@
 # OFD cutover status (keeper, 2026-10-08 ~11:55 PM CT)
+Last checked: 2026-10-09 00:59 CDT
 
 Done:
 - Astro preview live at https://dkrics.github.io/oldfashioneddoctor/ (200, Drinks present, no Blogger).
