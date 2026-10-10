@@ -44,3 +44,4 @@ Blocked (Homey action needed):
 - 2026-10-09 21:58 CT: preview OK (200, Drinks); apex still Blogger A, www ghs.google.com; cusdis 521. Blocked on Homey DNS change.
 
 - 2026-10-09 22:57 CDT: preview 200 (Drinks OK, no Blogger); apex still Blogger A, www CNAME ghs.google.com; cusdis 521. Blocked on Homey DNS change.
+- 2026-10-09 23:54 CT: preview 200 OK (Drinks, no Blogger); apex still Blogger A, www CNAME ghs.google.com; cusdis 521. Blocked on Homey DNS change.
