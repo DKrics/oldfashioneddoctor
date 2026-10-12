@@ -1,3 +1,4 @@
+Last keeper check: 2026-10-12 18:00 CDT
 Last checked: 2026-10-12 17:00 CDT — preview OK; DNS still Blogger (apex served by ghs, www CNAME ghs.google.com); cusdis 521
 # OFD cutover status (keeper, 2026-10-08 ~11:55 PM CT)
 Last check: 2026-10-09 10:22 CDT — preview OK; apex still Blogger; cusdis 521
@@ -57,3 +58,4 @@ Blocked (Homey action needed):
 - 2026-10-12 13:04 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex still Google A 216.239.32/34/36/38.21, www CNAME ghs.google.com (ghs/GSE Blogger); cusdis.com 521; no usable Squarespace/Google DNS session on box. Blocked on Homey DNS change.
 - 2026-10-12 14:01 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex still Google A 216.239.32/34/36/38.21, www CNAME ghs.google.com (ghs/GSE Blogger); cusdis.com 521; no usable Squarespace/Google DNS session on box. Blocked on Homey DNS change.
 - 2026-10-12 16:03 CT keeper: Astro preview 200 (Drinks OK, no Blogger); apex/www still Google/Blogger (ghs) so DNS cutover pending on Homey; cusdis.com 521. No material change.
+- 2026-10-12 18:00 CDT: keeper check — Astro preview 200 (Drinks OK, no Blogger); apex/www still Google/Blogger, DNS cutover pending (Homey must change DNS in Squarespace); cusdis.com 521.
