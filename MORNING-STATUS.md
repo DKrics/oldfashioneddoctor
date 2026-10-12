@@ -1,4 +1,4 @@
-Last checked: 2026-10-12 15:07 CDT — preview OK; DNS still Blogger (apex A 216.239.x.21, www CNAME ghs.google.com); cusdis 521
+Last checked: 2026-10-12 17:00 CDT — preview OK; DNS still Blogger (apex served by ghs, www CNAME ghs.google.com); cusdis 521
 # OFD cutover status (keeper, 2026-10-08 ~11:55 PM CT)
 Last check: 2026-10-09 10:22 CDT — preview OK; apex still Blogger; cusdis 521
 
