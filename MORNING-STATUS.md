@@ -67,3 +67,5 @@ Blocked (Homey action needed):
 - 2026-10-12 23:52 CT keeper check: Astro preview https://dkrics.github.io/oldfashioneddoctor/ live (200, Drinks OK, no Blogger). Apex oldfashioneddoctor.com still 301 via ghs and www served by GSE (Google/Blogger), so DNS cutover is still pending (Homey must change DNS in Squarespace/Google Domains). cusdis.com 521, so comments still blocked.
 
 - 2026-10-13 00:52 CT keeper check: Astro preview https://dkrics.github.io/oldfashioneddoctor/ live (200, Drinks OK, no Blogger). Apex oldfashioneddoctor.com still 301 via ghs and www served by GSE (Google/Blogger), so DNS cutover is still pending (Homey must change DNS in Squarespace/Google Domains). cusdis.com 521, so comments still blocked. No material change.
+
+- 2026-10-13 02:49 CT keeper check: Astro preview https://dkrics.github.io/oldfashioneddoctor/ live (200, Drinks OK, no Blogger). Apex oldfashioneddoctor.com still 301 via ghs and www served by GSE (Google/Blogger), so DNS cutover is still pending (Homey must change DNS in Squarespace/Google Domains). cusdis.com 521, so comments still blocked. No material change.
