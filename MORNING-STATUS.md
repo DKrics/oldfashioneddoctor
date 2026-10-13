@@ -1,5 +1,6 @@
-Last keeper check: 2026-10-12 20:57 CDT
-Last checked: 2026-10-12 20:57 CDT — preview OK (200, Drinks, no Blogger); apex 301 via ghs and www served by GSE (Google/Blogger), DNS cutover pending; cusdis 521
+Last keeper check: 2026-10-12 21:54 CDT
+Last checked: 2026-10-12 21:54 CDT — preview OK (200, Drinks, no Blogger); apex 301 via ghs and www served by GSE (Google/Blogger), DNS cutover pending; cusdis 521
+
 # OFD cutover status (keeper, 2026-10-08 ~11:55 PM CT)
 Last check: 2026-10-09 10:22 CDT — preview OK; apex still Blogger; cusdis 521
 
@@ -15,6 +16,7 @@ Blocked (Homey action needed):
   Box browser: no SID/HSID/SSID (or equivalent) for Google/Squarespace — cannot change DNS from here.
 - Comments: cusdis.com returns 521 (down), so PUBLIC_CUSDIS_APP_ID not set yet; Web3Forms remains fallback.
 
+- 2026-10-12 21:54 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex still 301 via ghs → www GSE (Google/Blogger), DNS cutover pending Homey; cusdis.com 521. No material change.
 - 2026-10-12 02:55 CDT: preview 200 OK (Drinks, no Blogger); apex still Blogger A 216.239.32/34/36/38.21, www CNAME ghs.google.com; cusdis.com 521; no Google SID/HSID/SSID (Squarespace analytics cookies only). Blocked on Homey DNS change.
 - 2026-10-12 04:56 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex still Blogger A 216.239.32/34/36/38.21, www CNAME ghs.google.com; cusdis.com 521; no Google SID/HSID/SSID (Squarespace analytics/session cookies only, not usable for DNS cut). Blocked on Homey DNS change.
 - 2026-10-12 03:54 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex still Blogger A 216.239.32/34/36/38.21, www CNAME ghs.google.com; cusdis.com 521; no Google SID/HSID/SSID (Squarespace analytics/session cookies only, not usable for DNS cut). Blocked on Homey DNS change.
