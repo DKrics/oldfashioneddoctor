@@ -1,5 +1,5 @@
-Last keeper check: 2026-10-13 05:52 CDT
-Last checked: 2026-10-13 05:52 CDT — preview OK (200, Drinks, no Blogger); apex 301 via ghs and www served by GSE (Google/Blogger), DNS cutover pending; cusdis 521
+Last keeper check: 2026-10-13 08:02 CDT
+Last checked: 2026-10-13 08:02 CDT — preview OK (200, Drinks, no Blogger); apex 301 via ghs and www served by GSE (Google/Blogger), DNS cutover pending; cusdis 521
 
 # OFD cutover status (keeper, 2026-10-08 ~11:55 PM CT)
 Last check: 2026-10-09 10:22 CDT — preview OK; apex still Blogger; cusdis 521
@@ -15,6 +15,8 @@ Blocked (Homey action needed):
   After that, keeper restores public/CNAME + astro site/base and enables Pages custom domain HTTPS.
   Box browser: no SID/HSID/SSID (or equivalent) for Google/Squarespace — cannot change DNS from here.
 - Comments: cusdis.com returns 521 (down), so PUBLIC_CUSDIS_APP_ID not set yet; Web3Forms remains fallback.
+
+- 2026-10-13 08:02 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex still 301 via ghs → www GSE (Google/Blogger), DNS cutover pending Homey; cusdis.com 521. No material change.
 
 - 2026-10-12 22:50 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex still 301 via ghs → www GSE (Google/Blogger), DNS cutover pending Homey; cusdis.com 521. No material change.
 - 2026-10-12 21:54 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex still 301 via ghs → www GSE (Google/Blogger), DNS cutover pending Homey; cusdis.com 521. No material change.
