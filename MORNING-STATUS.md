@@ -99,3 +99,4 @@ Blocked (Homey action needed):
 - 2026-10-14 ~08:59 CDT keeper check: Astro preview 200 (Drinks OK, no Blogger); apex A 216.239.32/34/36/38.21 (301 via ghs), www CNAME ghs.google.com served by GSE (Blogger) — DNS cutover still pending (needs Squarespace/Google login); cusdis.com 521 — comments still blocked. No material change.
 
 - 2026-10-14 09:55 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex still 301 via ghs → www GSE (Google/Blogger), DNS cutover pending Homey; cusdis.com 521. No material change.
+- 2026-10-14 ~10:55 CT keeper check: Astro preview 200 (Drinks OK, no Blogger). DNS unchanged: apex A = Google 216.239.x.21, www CNAME ghs.google.com (served by GSE/Blogger) — cutover still needs Homey's Squarespace/Google DNS login. cusdis.com 521 (down). No material change.
