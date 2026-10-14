@@ -1,5 +1,5 @@
-Last keeper check: 2026-10-14 13:00 CDT (preview 200 Astro/Drinks, no Blogger; apex A still Google 216.239.32/34/36/38.21, apex HTTPS 301 via ghs → www; www CNAME ghs.google.com served by GSE/Blogger — DNS cutover pending; cusdis.com 521)
-Last checked: 2026-10-14 05:52 CDT — preview OK (200, Drinks, no Blogger); apex HTTPS 301 via ghs → www; www served by GSE (Google/Blogger), DNS cutover pending; cusdis 521
+Last keeper check: 2026-10-14 14:51 CDT (preview 200 Astro/Drinks, no Blogger; apex A still Google 216.239.32/34/36/38.21, apex HTTPS 301 via ghs → www; www CNAME ghs.google.com served by GSE/Blogger — DNS cutover pending; cusdis.com 521)
+Last checked: 2026-10-14 14:51 CDT — preview OK (200, Drinks, no Blogger); apex HTTPS 301 via ghs → www; www served by GSE (Google/Blogger), DNS cutover pending; cusdis 521
 
 # OFD cutover status (keeper, 2026-10-08 ~11:55 PM CT)
 Last check: 2026-10-09 10:22 CDT — preview OK; apex still Blogger; cusdis 521
@@ -17,6 +17,7 @@ Blocked (Homey action needed):
 - Comments: cusdis.com returns 521 (down), so PUBLIC_CUSDIS_APP_ID not set yet; Web3Forms remains fallback.
 
 
+- 2026-10-14 14:51 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex A still Google 216.239.32/34/36/38.21, HTTPS 301 via ghs → www GSE (Google/Blogger); www CNAME ghs.google.com; DNS cutover pending Homey; cusdis.com 521. No material change.
 - 2026-10-14 13:00 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex A still Google 216.239.32/34/36/38.21, HTTPS 301 via ghs → www GSE (Google/Blogger); www CNAME ghs.google.com; DNS cutover pending Homey; cusdis.com 521. No material change.
 
 - 2026-10-14 12:04 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex A still Google 216.239.32/34/36/38.21, HTTPS 301 via ghs → www GSE (Google/Blogger); www CNAME ghs.google.com; DNS cutover pending Homey; cusdis.com 521. No material change.
