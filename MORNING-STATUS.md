@@ -1,5 +1,5 @@
-Last keeper check: 2026-10-15 22:55 CDT (preview 200 Astro/Drinks, no Blogger; apex A still Google 216.239.32/34/36/38.21, apex HTTPS 301 via ghs → www; www CNAME ghs.google.com served by GSE/Blogger — DNS cutover pending; cusdis.com 521)
-Last checked: 2026-10-15 22:55 CDT — preview OK (200, Drinks, no Blogger); apex A still Google 216.239.x.21, www CNAME ghs.google.com (Blogger), DNS cutover pending; cusdis 521
+Last keeper check: 2026-10-15 23:53 CDT (preview 200 Astro/Drinks, no Blogger; apex A still Google 216.239.32/34/36/38.21; www CNAME ghs.google.com (GSE/Blogger) — DNS cutover pending; cusdis.com 521)
+Last checked: 2026-10-15 23:53 CDT — preview OK (200, Drinks, no Blogger); apex A still Google 216.239.x.21, www CNAME ghs.google.com (Blogger), DNS cutover pending; cusdis 521
 # OFD cutover status (keeper, 2026-10-08 ~11:55 PM CT)
 Last check: 2026-10-09 10:22 CDT — preview OK; apex still Blogger; cusdis 521
 
