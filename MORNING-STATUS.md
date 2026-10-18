@@ -117,6 +117,7 @@ Blocked (Homey action needed):
 - 2026-10-13 00:52 CT keeper check: Astro preview https://dkrics.github.io/oldfashioneddoctor/ live (200, Drinks OK, no Blogger). Apex oldfashioneddoctor.com still 301 via ghs and www served by GSE (Google/Blogger), so DNS cutover is still pending (Homey must change DNS in Squarespace/Google Domains). cusdis.com 521, so comments still blocked. No material change.
 
 - 2026-10-13 02:49 CT keeper check: Astro preview https://dkrics.github.io/oldfashioneddoctor/ live (200, Drinks OK, no Blogger). Apex oldfashioneddoctor.com still 301 via ghs and www served by GSE (Google/Blogger), so DNS cutover is still pending (Homey must change DNS in Squarespace/Google Domains). cusdis.com 521, so comments still blocked. No material change.
+- 2026-10-17 ~19:52 CDT: Astro preview live (200, Drinks OK, no Blogger). Apex A still Google 216.239.x.21, www CNAME ghs.google.com — DNS cutover pending Homey's Squarespace/Google login. cusdis.com 521. No change.
 - 2026-10-13 ~03:52 CT keeper check: Astro preview 200 (Drinks OK, no Blogger); apex 301 via ghs and www served by GSE (Blogger), so DNS cutover still pending (needs Squarespace/Google login); cusdis.com 521; no material change.
 - 2026-10-13 ~06:56 CT keeper check: Astro preview 200 (Drinks OK, no Blogger); apex 301 via ghs (Google A records 216.239.x.21) and www CNAME ghs.google.com served by GSE (Blogger), so DNS cutover still pending (needs Squarespace/Google login); cusdis.com 521; no material change.
 
