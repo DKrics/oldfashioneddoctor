@@ -1,4 +1,4 @@
-Last checked: 2026-10-19 08:52 CDT — preview OK (200, Drinks, no Blogger); apex A still Google 216.239.x.21, www CNAME ghs.google.com (Blogger); DNS cutover pending Squarespace login; cusdis.com 521
+Last checked: 2026-10-19 11:11 CDT — preview OK (200, Drinks, no Blogger); apex A still Google 216.239.x.21, www CNAME ghs.google.com (Blogger); DNS cutover pending Squarespace login; cusdis.com 521
 # OFD cutover status (keeper, 2026-10-08 ~11:55 PM CT)
 Last check: 2026-10-09 10:22 CDT — preview OK; apex still Blogger; cusdis 521
 
@@ -14,6 +14,7 @@ Blocked (Homey action needed):
   Box browser: no SID/HSID/SSID (or equivalent) for Google/Squarespace — cannot change DNS from here.
 - Comments: cusdis.com returns 521 (down), so PUBLIC_CUSDIS_APP_ID not set yet; Web3Forms remains fallback.
 
+- 2026-10-19 11:11 CDT: Preview 200 (Astro, Drinks OK, no Blogger). Apex A still Google 216.239.x.21; www CNAME ghs.google.com (Blogger). DNS cutover pending Homey's Squarespace/Google login. cusdis.com 521. No material change.
 - 2026-10-19 02:51 CDT: Preview 200 (Astro, Drinks OK, no Blogger). Apex A still Google 216.239.x.21; www CNAME ghs.google.com (Blogger). DNS cutover pending Homey's Squarespace/Google login. cusdis.com 521.
 - 2026-10-18 13:56 CDT: preview 200 OK (Drinks, cream/amber, no Blogger); apex A still Google 216.239.32/34/36/38.21, HTTPS 301 via ghs → www GSE (Google/Blogger); www CNAME ghs.google.com; DNS cutover pending Homey; cusdis.com 521. No material change.
 
