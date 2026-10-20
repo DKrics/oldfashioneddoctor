@@ -1,4 +1,4 @@
-Last checked: 2026-10-20 00:56 CDT — preview OK (200; Astro, Drinks, no Blogger); apex A still Google 216.239.x.21, www CNAME ghs.google.com (Blogger); DNS cutover pending Squarespace login; cusdis.com 521.
+Last checked: 2026-10-20 01:57 CDT — preview OK (200; Astro, Drinks, no Blogger); apex A still Google 216.239.x.21, www CNAME ghs.google.com (Blogger); DNS cutover pending Squarespace login; cusdis.com 521.
 # OFD cutover status (keeper, 2026-10-08 ~11:55 PM CT)
 Last check: 2026-10-09 10:22 CDT — preview OK; apex still Blogger; cusdis 521
 
