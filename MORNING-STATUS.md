@@ -158,6 +158,7 @@ Blocked (Homey action needed):
 - 2026-10-18 ~03:57 CDT: Preview live (200, Drinks OK, no Blogger). Apex A still Google 216.239.x.21, www CNAME ghs.google.com — DNS cutover pending (needs Squarespace/Google Domains login). cusdis.com 521.
 
 ## Run log
+- 2026-10-23 06:52 CDT: Preview live (200, Drinks OK, no Blogger). Apex A still Google 216.239.x.21, www CNAME ghs.google.com, so DNS cutover still blocked on Homey's Squarespace/Google login. cusdis.com 521.
 - 2026-10-18 ~22:50 CDT: Astro preview live (200, Drinks OK, no Blogger); apex A still Google 216.239.x.21, www CNAME ghs.google.com (Blogger) — DNS cutover pending Homey/Squarespace login; cusdis.com 521.
 - 2026-10-18 07:56 CDT: Preview live (200, Drinks OK, no Blogger). DNS still Blogger (apex A 216.239.x.21, www CNAME ghs.google.com). cusdis.com 521. Blocked on Homey DNS login.
 - 2026-10-18 12:55 CDT: Preview live (200, Drinks OK, no Blogger). DNS still Blogger (apex A 216.239.x.21, www CNAME ghs.google.com). cusdis.com 521. Blocked on Homey DNS login.
