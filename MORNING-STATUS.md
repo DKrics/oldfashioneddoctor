@@ -191,3 +191,4 @@ Last keeper check: 2026-10-23 20:53 CDT — preview 200 (Drinks OK, no Blogger);
 - 2026-10-23 12:56 CDT: Astro preview live (200, Drinks OK, no Blogger); apex A still Google, www CNAME ghs.google.com; DNS cutover pending (needs Homey's Squarespace/Google login); cusdis.com 521.
 - 2026-10-23 ~13:55 CDT: Astro preview live (200, Drinks OK, no Blogger); apex A still Google 216.239.x.21, www CNAME ghs.google.com (Blogger) — DNS cutover pending Homey's Squarespace/Google login; cusdis.com 521.
 - 2026-10-23 23:58 CDT: Astro preview live (200, Drinks OK, no Blogger). Apex A still Google 216.239.x.21, www CNAME ghs.google.com (Blogger) - DNS cutover pending Homey's Squarespace/Google login. cusdis.com 521 (comments still blocked).
+- 2026-10-24 00:53 CDT: keeper check — Astro preview 200 (Drinks OK, no Blogger); apex DNS still Google/Blogger, www CNAME ghs.google.com; DNS cutover pending (needs Squarespace/Google login); cusdis.com 521, comments pending.
