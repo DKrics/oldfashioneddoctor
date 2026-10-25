@@ -1,4 +1,4 @@
-Last checked: 2026-10-24 20:51 CDT — preview 200 OK (Drinks, no Blogger); DNS still Google/Blogger; cusdis 521.
+Last checked: 2026-10-24 21:57 CDT — preview 200 OK (Drinks, no Blogger); DNS still Google/Blogger; cusdis 521.
 
 _Last keeper check: 2026-10-24 ~15:56 CDT — preview 200 OK (Drinks, no Blogger); apex A still Google 216.239.x.21, www CNAME ghs.google.com; DNS cutover pending (needs Homey's Squarespace/Google login); cusdis.com 521.
 # OFD cutover status (keeper, 2026-10-08 ~11:55 PM CT)
